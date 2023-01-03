@@ -24,36 +24,36 @@ function Footer() {
               </p>
             </div>
             <div className="socials">
-              <div>
+              <li>
                 <a href="hhtps:">
                   <img src="images/social_instagram.png" />
                 </a>
-              </div>
-              <div>
+              </li>
+              <li>
                 <a href="hhtps">
                   <img src="images/social_telegram.png" />
                 </a>
-              </div>
-              <div>
+              </li>
+              <li>
                 <a href="hhtps">
                   <img src="images/social_odno.png" />
                 </a>
-              </div>
-              <div>
+              </li>
+              <li>
                 <a href="hhtps">
                   <img src="images/social_facebook.png" />
                 </a>
-              </div>
-              <div>
+              </li>
+              <li>
                 <a href="hhtps">
                   <img src="images/social_vk.png" />
                 </a>
-              </div>
-              <div>
+              </li>
+              <li>
                 <a href="hhtps">
                   <img src="images/social_linkedin.png" />
                 </a>
-              </div>
+              </li>
             </div>
           </div>
           <div className="mycol">

@@ -1,22 +1,29 @@
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "Hammersmith One", sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0 !important;
+}
+ul {
+  margin-bottom: 0 !important;
+}
+h2 {
+  margin-bottom: 0;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -94,7 +101,7 @@ a {
     .number {
       position: absolute;
       z-index: 1;
-      top: -170%;
+      top: -100%;
       margin: 0;
 
       p {
@@ -114,6 +121,7 @@ a {
       h1 {
         color: #46689c;
         text-transform: uppercase;
+        font-weight: 700;
       }
     }
   }
@@ -145,6 +153,11 @@ a {
   h1 {
     max-width: 90%;
     margin: 0 auto;
+    p {
+      font-size: 17px;
+      line-height: initial;
+      font-weight: 400;
+    }
   }
 }
 
@@ -210,6 +223,7 @@ a {
       h3 {
         text-transform: uppercase;
         color: #46689c;
+        font-weight: 700;
       }
     }
   }
@@ -228,4 +242,14 @@ a {
   align-items: center;
 
   color: #ffffff;
+}
+
+// Unique some texts
+.uni_p {
+  padding: 50px 0;
+  color: #fff;
+  font-size: 20px;
+}
+.light_dark {
+  background-color: #333333;
 }

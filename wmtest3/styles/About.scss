@@ -120,3 +120,26 @@
     }
   }
 }
+.TeamBack {
+  .main_back {
+    background: url("../public/images/team_back.png");
+  }
+  .main_content {
+    background-color: #333333;
+    padding: 50px 0;
+    .members {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+}
+.ant-modal-body {
+  h5 {
+    padding-top: 5px;
+  }
+  .this_director {
+    img {
+      width: 100%;
+    }
+  }
+}

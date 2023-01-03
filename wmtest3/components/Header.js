@@ -51,10 +51,10 @@ function Header() {
                     <Link href="/about-us">О нас</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/team-members">Команда</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/join-us">Карьера</Link>
                   </li>
                 </div>
               </li>

@@ -1,27 +1,91 @@
 .mycol_member {
-  padding: 40px 0;
+  background: #232323;
+  padding: 10px;
   text-align: center;
+  margin: 20px 10px;
   .about {
-    padding-left: 15px;
-    h3 {
-      padding: 10px 0;
-      font-weight: 800;
-      color: #293350;
-      width: 100%;
+    background-color: #232323;
+    .for_img_member {
+      background-color: #171717;
     }
-    button {
-      background: transparent;
-      border: none;
-      color: #cd9827;
-      &:focus {
-        outline: 0;
+    .border_g {
+      background-color: transparent;
+      border: 1px solid #46689c;
+      padding: 3px;
+      font-weight: 300 !important;
+      display: initial;
+      font-size: 12px;
+      &:hover {
+        cursor: pointer;
+        background-color: #46689c;
+        color: #fff;
       }
     }
+    h3 {
+      padding: 5px 0;
+      padding-top: 10px;
+      margin-bottom: 0;
+      font-weight: 800;
+      color: #46689c;
+      width: 100%;
+    }
+    p {
+      padding: 5px 0;
+    }
+    // button {
+    //   background: transparent;
+    //   border: none;
+    //   color: #cd9827;
+    //   &:focus {
+    //     outline: 0;
+    //   }
+    // }
   }
   img {
-    max-width: 50%;
+    max-width: 90%;
+    padding: 20px;
     margin: 0 auto;
     object-fit: contain;
     text-align: center;
+  }
+}
+.ant-modal-content {
+  background: #232323 !important;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 0 !important;
+}
+.ant-modal-close-x {
+  color: #fff;
+}
+.about_worker {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    .left_about {
+      text-align: center;
+      .for_img_worker {
+        background-color: #171717;
+        img {
+          max-width: 100%;
+          padding: 20px;
+          margin: 0 auto;
+          object-fit: contain;
+          text-align: center;
+        }
+      }
+      h1 {
+        color: #46689c;
+      }
+      h4 {
+        color: #fff;
+      }
+    }
+    .right_about {
+      margin-left: 50px;
+      p {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
   }
 }
