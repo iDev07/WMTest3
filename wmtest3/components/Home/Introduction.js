@@ -11,11 +11,9 @@ function Introduction() {
         </div>
         <div className="content">
           <div className="main containerdev">
-            <Flash>
-              <h1 className="heading">
-                <span>СОЗДАЁМ</span> ПРОДУКТЫ ДЛЯ ЛЮДЕЙ
-              </h1>
-            </Flash>
+            <h1 className="heading">
+              <span>СОЗДАЁМ</span> ПРОДУКТЫ ДЛЯ ЛЮДЕЙ
+            </h1>
             <p className="short_about">
               Группа компаний World Miral – крупная компания с многолетним
               опытом работы в Узбекистане. В нашу компанию входят предприятия и
