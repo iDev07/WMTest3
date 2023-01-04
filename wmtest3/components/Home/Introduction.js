@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Flash from "react-reveal/Flash";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function Introduction() {
   return (
