@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import Flash from "react-reveal/Flash";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function Introduction() {
   return (
@@ -11,9 +11,11 @@ function Introduction() {
         </div>
         <div className="content">
           <div className="main containerdev">
-            <h1 className="heading">
-              <span>СОЗДАЁМ</span> ПРОДУКТЫ ДЛЯ ЛЮДЕЙ
-            </h1>
+            <Flash>
+              <h1 className="heading">
+                <span>СОЗДАЁМ</span> ПРОДУКТЫ ДЛЯ ЛЮДЕЙ
+              </h1>
+            </Flash>
             <p className="short_about">
               Группа компаний World Miral – крупная компания с многолетним
               опытом работы в Узбекистане. В нашу компанию входят предприятия и
