@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Head>
-        <title>About Us</title>
+        <title>About our company</title>
       </Head>
       <div className="About">
         <div className="main_back wrapper">
