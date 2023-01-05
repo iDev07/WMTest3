@@ -1,30 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import i18n from "../i18n";
 function Header() {
-  // const defaultLang = localStorage.getItem("lang") || "uz";
-  // const [lang, setLang] = useState(defaultLang);
-  // const handleChange = (event) => {
-  //   setLang(event.target.value);
-  //   localStorage.setItem("lang", event.target.value);
-  //   i18n.changeLanguage(event.target.value);
-  // };
+  const defaultLang = localStorage.getItem("lang") || "uz";
+  const [lang, setLang] = useState(defaultLang);
+  const handleChange = (event) => {
+    setLang(event.target.value);
+    localStorage.setItem("lang", event.target.value);
+    i18n.changeLanguage(event.target.value);
+  };
   const [scroll, setScroll] = useState("");
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY < 200) {
-  //     setScroll("");
-  //   } else {
-  //     setScroll("scrolled");
-  //   }
-  // });
 
-  // useEffect(() => {
-  //   if (window.scrollY < 300) {
-  //     setScroll("");
-  //   } else {
-  //     setScroll("scrolled");
-  //   }
-  // }, []);
   window.addEventListener("scroll", () => {
     if (window.scrollY < 300) {
       setScroll("");
@@ -80,6 +67,13 @@ function Header() {
               </li>
               <li>
                 <Link href="/rating">Контакты</Link>
+              </li>
+              <li>
+                <select name="lang" value={lang} onChange={handleChange}>
+                  <option value="uz">UZ</option>
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                </select>
               </li>
             </ul>
           </div>

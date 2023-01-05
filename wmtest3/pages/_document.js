@@ -49,7 +49,6 @@ export default function Document() {
           name="msapplication-TileImage"
           content="http://worldmiral.com/static/media/logo.cc6b24336917bd54a104484b70b8e4b4.svg"
         />
-        <title>World Miral - Группа компаний</title>
       </Head>
       <body>
         <Main />

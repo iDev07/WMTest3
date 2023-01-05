@@ -1,6 +1,8 @@
+import React from "react";
 import Link from "next/link";
-
+import { useTranslation } from "react-i18next";
 export const Heading = ({ number, name, name_page, link }) => {
+  const { t } = useTranslation();
   return (
     <div className="Heading_pages">
       <div className="wrapper">
@@ -13,7 +15,7 @@ export const Heading = ({ number, name, name_page, link }) => {
               <h1>{name}</h1>
             </div>
             <div className="border_g ml-auto">
-              <Link href={link}>{name_page}</Link>
+              <Link href={link}>{t("test.test1")}</Link>
             </div>
           </div>
         </div>
@@ -21,3 +23,4 @@ export const Heading = ({ number, name, name_page, link }) => {
     </div>
   );
 };
+// {/* {name_page} */}

@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import { Heading } from "../components/Heading";
 import { Inter } from "@next/font/google";
@@ -8,6 +9,7 @@ import HomeNews from "../components/Home/HomeNews";
 import Partners from "../components/Home/Partners";
 
 export default function Home() {
+  console.log(Introduction, Introduction);
   return (
     <>
       <Head>
