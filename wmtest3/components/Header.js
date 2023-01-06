@@ -60,7 +60,7 @@ function Header() {
                 </div>
               </li>
               <li>
-                <Link href="/tournaments">ALL4U Market</Link>
+                <Link href="/all4umarket">ALL4U Market</Link>
               </li>
               <li>
                 <Link href="/clubs">Новости</Link>
