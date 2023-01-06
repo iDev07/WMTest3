@@ -126,9 +126,6 @@ h2 {
     }
   }
 }
-.ml-auto {
-  margin-left: auto;
-}
 
 // Main backgroud images styles
 .main_back {
@@ -253,6 +250,19 @@ h2 {
   color: #fff;
   font-size: 20px;
 }
+
+//  Colors
 .light_dark {
   background-color: #333333;
+}
+// Margin and Padding
+.ml-auto {
+  margin-left: auto;
+}
+
+.p-5 {
+  padding: 50px 0;
+}
+.pb-5 {
+  padding-bottom: 50px;
 }
