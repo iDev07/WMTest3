@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
