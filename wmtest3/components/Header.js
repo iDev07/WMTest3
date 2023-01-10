@@ -50,10 +50,10 @@ function Header() {
                 <Link href="/tournaments">Направления бизнеса</Link>
                 <div className="hidden_links_one">
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/produce">Produce</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/advertising">Advertising</Link>
                   </li>
                   <li>
                     <Link href="/about-us">О нас</Link>

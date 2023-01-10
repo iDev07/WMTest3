@@ -1,0 +1,28 @@
+.Produce {
+  .main_back {
+    background: url("../public/images/produce_back.png");
+  }
+  .about_diagnokim {
+    .content_wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .left_box {
+        margin-right: 40px;
+        p {
+          font-size: 18px;
+          line-height: 170%;
+          color: #ffffff;
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+  .link_catalog {
+    text-align: center;
+    a {
+      display: block;
+      margin: 0 auto;
+      max-width: 30%;
+    }
+  }
+}

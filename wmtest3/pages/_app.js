@@ -6,6 +6,8 @@ import "antd/dist/reset.css";
 import "../styles/helpers.scss";
 import "../styles/JoinUs.scss";
 import "../styles/all4umarket.scss";
+import "../styles/produce.scss";
+import "../styles/advertising.scss";
 import Layout from "../components/Layout";
 export default function App({ Component, pageProps }) {
   return (
