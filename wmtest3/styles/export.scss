@@ -1,0 +1,77 @@
+.Export {
+  .main_back {
+    background: url("../public/images/export_back.png");
+  }
+  .results_numbers {
+    padding-bottom: 50px;
+    .num_wrapper {
+      max-width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .mycol {
+        background-color: #242424;
+        padding: 10px 20px;
+        width: 300px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        .inner_wrap {
+          width: 100%;
+          text-align: center;
+          span {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            font-size: 35px;
+            display: block;
+          }
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .about_facts {
+    padding-bottom: 50px;
+    .grid-5 {
+      div {
+        height: 330px;
+        background-color: #242424;
+      }
+      p {
+        padding: 30px;
+        font-size: 17px;
+        line-height: 170%;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+      }
+    }
+  }
+  .Exportpartners {
+    height: 50vh;
+    background-color: #333;
+    .wrapper {
+      height: 50vh;
+      display: flex;
+      align-items: center;
+    }
+    .c_logo {
+      display: flex;
+      background-color: rgb(233, 233, 233);
+      border-radius: 15px;
+      width: 70%;
+      padding: 5px;
+
+      margin: 0 auto;
+      justify-content: center;
+      img {
+        width: 150px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+  }
+}

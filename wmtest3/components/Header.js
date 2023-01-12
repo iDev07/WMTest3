@@ -25,7 +25,7 @@ function Header() {
       <div className="header containerdev">
         <div className="left_wrapper">
           <Link href="/">
-            <img src="new_logo.svg" alt="This a logo" />
+            <img src="../new_logo.svg" alt="This a logo" />
             <h2>WorldMiral</h2>
           </Link>
         </div>
@@ -56,7 +56,7 @@ function Header() {
                     <Link href="/advertising">Advertising</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/export">Export </Link>
                   </li>
                 </div>
               </li>
@@ -64,7 +64,7 @@ function Header() {
                 <Link href="/all4umarket">ALL4U Market</Link>
               </li>
               <li>
-                <Link href="/clubs">Новости</Link>
+                <Link href="/news/blog">Новости</Link>
               </li>
               <li>
                 <Link href="/rating">Контакты</Link>
