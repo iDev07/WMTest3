@@ -27,32 +27,32 @@ function Footer() {
             <div className="socials">
               <li>
                 <a href="hhtps:">
-                  <img src="../images/social_instagram.png" />
+                  <img src="../../images/social_instagram.png" />
                 </a>
               </li>
               <li>
                 <a href="hhtps">
-                  <img src="../images/social_telegram.png" />
+                  <img src="../../images/social_telegram.png" />
                 </a>
               </li>
               <li>
                 <a href="hhtps">
-                  <img src="../images/social_odno.png" />
+                  <img src="../../images/social_odno.png" />
                 </a>
               </li>
               <li>
                 <a href="hhtps">
-                  <img src="../images/social_facebook.png" />
+                  <img src="../../images/social_facebook.png" />
                 </a>
               </li>
               <li>
                 <a href="hhtps">
-                  <img src="../images/social_vk.png" />
+                  <img src="../../images/social_vk.png" />
                 </a>
               </li>
               <li>
                 <a href="hhtps">
-                  <img src="../images/social_linkedin.png" />
+                  <img src="../../images/social_linkedin.png" />
                 </a>
               </li>
             </div>

@@ -25,7 +25,7 @@ function Header() {
       <div className="header containerdev">
         <div className="left_wrapper">
           <Link href="/">
-            <img src="../new_logo.svg" alt="This a logo" />
+            <img src="../../new_logo.svg" alt="This a logo" />
             <h2>WorldMiral</h2>
           </Link>
         </div>
@@ -58,6 +58,9 @@ function Header() {
                   <li>
                     <Link href="/export">Export </Link>
                   </li>
+                  <li>
+                    <Link href="/IT-services">IT services </Link>
+                  </li>
                 </div>
               </li>
               <li>
@@ -67,7 +70,7 @@ function Header() {
                 <Link href="/news/blog">Новости</Link>
               </li>
               <li>
-                <Link href="/rating">Контакты</Link>
+                <Link href="/contacts">Контакты</Link>
               </li>
               <li>
                 <select name="lang" value={lang} onChange={handleChange}>

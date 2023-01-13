@@ -1,3 +1,21 @@
 .News {
   background-color: #333;
+  .main_back {
+    background-image: url("../public/images/news_back.png");
+  }
+  .main_news {
+    .wrapper {
+      .mycol {
+        width: 95%;
+        text-align: center;
+        h2 {
+          padding: 10px 0;
+        }
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
 }
