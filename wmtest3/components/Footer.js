@@ -5,10 +5,10 @@ import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import dynamic from "next/dynamic";
-
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import Link from "next/link";
 function Footer() {
+  const thisYear = new Date().getFullYear().toString();
   return (
     <div className="Footer">
       <div className="containerdev">
@@ -26,12 +26,12 @@ function Footer() {
             </div>
             <div className="socials">
               <li>
-                <a href="hhtps:">
+                <a href="https://www.instagram.com/all4u.market/">
                   <img src="../../images/social_instagram.png" />
                 </a>
               </li>
               <li>
-                <a href="hhtps">
+                <a href="https://t.me/all4umarket">
                   <img src="../../images/social_telegram.png" />
                 </a>
               </li>
@@ -41,7 +41,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="hhtps">
+                <a href="https://www.facebook.com/worldmiral.llc/">
                   <img src="../../images/social_facebook.png" />
                 </a>
               </li>
@@ -155,9 +155,17 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="bottom_copyright">
+        <div className="containerdev">
+          <div className="right_box">
+            <p>{`WorldMiral © ${thisYear} | Все права защищены`}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 // export default Footer;
 export default dynamic(() => Promise.resolve(Footer), { ssr: false });
+// How to take current year in JavaScript?

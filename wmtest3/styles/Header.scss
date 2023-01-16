@@ -1,4 +1,7 @@
 .header_wrapper {
+  @media (max-width: 992px) {
+    display: none;
+  }
   padding: 10px 0;
   position: absolute;
   background: transparent;
@@ -8,11 +11,22 @@
   z-index: 100;
   top: 0;
   transition: 0.4s ease;
+  select {
+    background-color: transparent;
+    border-radius: 0 !important;
+    border: none;
+  }
 }
 .scrolled {
   background-color: #232323;
   position: fixed;
   top: 0;
+  select {
+    border: none;
+  }
+  .hidden_links_one {
+    background-color: #232323 !important;
+  }
 }
 .header {
   display: flex;
@@ -64,7 +78,8 @@
       display: block;
       width: 100%;
       top: 70px;
-      background-color: #232323;
+      background-color: transparent;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
       li {
         width: 100%;
         transition: 0.2s ease;

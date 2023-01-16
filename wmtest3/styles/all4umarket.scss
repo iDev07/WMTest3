@@ -65,13 +65,12 @@
     .wrapper {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
-      overflow: hidden;
       .mycol {
         margin: 0 5px;
         transition: 0.25s ease;
         overflow: hidden;
         &:hover {
-          transform: skewY(-180deg);
+          transform: translateY(-10px);
         }
         .inner_wrap {
           overflow: hidden;

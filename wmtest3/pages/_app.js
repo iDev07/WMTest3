@@ -13,6 +13,9 @@ import "../styles/news.scss";
 import "../styles/MainSingle.scss";
 import "../styles/itservices.scss";
 import "../styles/contacts.scss";
+import "../styles/bootstrap.min.css";
+import "../styles/MobileNav.scss";
+import "../styles/Footer.scss";
 import Layout from "../components/Layout";
 export default function App({ Component, pageProps }) {
   return (

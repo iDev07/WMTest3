@@ -47,7 +47,7 @@ function Header() {
                 </div>
               </li>
               <li>
-                <Link href="/tournaments">Направления бизнеса</Link>
+                <Link href="/produce">Направления бизнеса</Link>
                 <div className="hidden_links_one">
                   <li>
                     <Link href="/produce">Produce</Link>
@@ -74,9 +74,30 @@ function Header() {
               </li>
               <li>
                 <select name="lang" value={lang} onChange={handleChange}>
-                  <option value="uz">UZ</option>
-                  <option value="ru">RU</option>
-                  <option value="en">EN</option>
+                  <option
+                    style={{
+                      background: "#232323",
+                    }}
+                    value="uz"
+                  >
+                    UZ
+                  </option>
+                  <option
+                    style={{
+                      background: "#232323",
+                    }}
+                    value="ru"
+                  >
+                    RU
+                  </option>
+                  <option
+                    style={{
+                      background: "#232323",
+                    }}
+                    value="en"
+                  >
+                    EN
+                  </option>
                 </select>
               </li>
             </ul>

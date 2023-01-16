@@ -28,6 +28,9 @@
         margin: 30px auto;
       }
       .down_animation {
+        @media (max-width: 768px) {
+          margin-top: 0;
+        }
         margin-top: 80px;
         margin-bottom: -100px;
         svg {
@@ -62,6 +65,13 @@
 .Advantages {
   background-color: #333333;
   .wrapper {
+    @media (max-width: 768px) {
+      display: block;
+      div {
+        width: 100% !important;
+        margin: 30px 0 !important;
+      }
+    }
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 50px 0;
@@ -100,6 +110,9 @@
 .Directions {
   .wrapper {
     .myrow {
+      @media (max-width: 992px) {
+        display: block;
+      }
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
       overflow-x: hidden;
@@ -282,7 +295,7 @@
         transition: 0.3s ease;
         position: absolute;
         width: 100%;
-        height: 99%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -292,6 +305,9 @@
         p {
           font-size: 20px;
         }
+      }
+      h2 {
+        padding: 10px 0;
       }
     }
   }
@@ -340,83 +356,6 @@
   }
 }
 
-.Footer {
-  padding: 50px 0;
-  background-color: #242424;
-  .wrapper {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    .mycol {
-      .top_sec {
-        width: 100%;
-        padding: 7px 0;
-        border-bottom: 1px solid #333333;
-        h3 {
-          position: relative;
-          max-width: 60%;
-          &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            color: #46689c;
-            background-color: #46689c;
-            bottom: -7px;
-          }
-        }
-      }
-      .content {
-        p {
-          margin: 8px 0;
-        }
-        li {
-          list-style: none;
-          display: flex;
-          padding: 10px 0;
-          transition: 0.3s ease;
-          align-items: center;
-          &:hover {
-            padding-left: 5px;
-            svg {
-              color: #fff;
-            }
-          }
-          a {
-            display: flex;
-            align-items: center;
-          }
-          svg {
-            width: 20px;
-            margin-right: 5px;
-            transition: 0.3s ease;
-            color: #46689c;
-          }
-        }
-      }
-      .socials {
-        display: flex;
-        color: #232323;
-        justify-content: flex-start;
-        margin: 20px 0;
-        li {
-          transition: 0.3s ease;
-
-          list-style: none;
-          background-color: #333;
-          padding: 6px;
-          margin-right: 10px;
-          &:hover {
-            transform: translateY(-5px);
-          }
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
 @keyframes first_icon {
   0% {
     color: rgba(255, 255, 255, 0.315);
