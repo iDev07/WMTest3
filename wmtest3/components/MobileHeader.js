@@ -92,11 +92,11 @@ function MobileHeader() {
                     <Link href="/about-us">{t("submenus.about1")}</Link>
                   </li>
                   <li onClick={handleClose}>
-                    <Link href="/team">{t("submenus.about2")}</Link>
+                    <Link href="/team-members">{t("submenus.about2")}</Link>
                   </li>
 
                   <li onClick={handleClose}>
-                    <Link href="/career">{t("submenus.about3")}</Link>
+                    <Link href="/join-us">{t("submenus.about3")}</Link>
                   </li>
                 </ul>
               </li>
@@ -111,7 +111,7 @@ function MobileHeader() {
                 </p>
                 <ul className={`submenu2 ${subMenu2}`}>
                   <li onClick={handleClose}>
-                    <Link href="/marketplace">{t("submenus.direct1")}</Link>
+                    <Link href="/all4umarket">{t("submenus.direct1")}</Link>
                   </li>
                   <li onClick={handleClose}>
                     <Link href="/produce">{t("submenus.direct2")}</Link>

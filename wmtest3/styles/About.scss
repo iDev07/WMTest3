@@ -10,6 +10,9 @@
     .Advantages {
       background-color: #333333;
       .wrapper {
+        @media (max-width: 992px) {
+          display: block;
+        }
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 50px 0;
@@ -55,11 +58,24 @@
     margin-top: 50px;
     padding: 0;
     .wrapper {
+      @media (max-width: 992px) {
+        display: block;
+        position: initial;
+        max-width: 100%;
+        img {
+          position: initial !important;
+          margin: 10px 0 !important;
+          width: 100% !important;
+        }
+        .right_box {
+          margin-left: 0 !important;
+          padding: 15px !important;
+        }
+      }
       display: grid;
       grid-template-columns: 40% 60%;
       max-width: 80%;
       margin: 10px auto;
-      position: relative;
       position: relative;
       .left_box {
         img {

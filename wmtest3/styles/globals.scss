@@ -229,6 +229,9 @@ h2 {
     justify-content: center;
     &::after,
     &::before {
+      @media (max-width: 768px) {
+        width: 20% !important;
+      }
       content: "";
       display: block;
       height: 1px;
@@ -243,6 +246,9 @@ h2 {
     }
     .parent {
       h3 {
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
         text-transform: uppercase;
         color: #46689c;
         font-weight: 700;
@@ -255,6 +261,9 @@ h2 {
 // Simple Texts
 
 .simple_text {
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

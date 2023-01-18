@@ -1,8 +1,9 @@
 import React from "react";
-import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/navigation";
+import { Pagination, Navigation, Autoplay } from "swiper";
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Link from "next/link";
 function HomeNews() {
   return (
@@ -12,10 +13,34 @@ function HomeNews() {
           <Swiper
             spaceBetween={50}
             slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerGroup={1}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loopFillGroupWithBlank={true}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
             navigation={true}
-            modules={[Navigation]}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
           >
             <SwiperSlide>
               <div className="mycol">

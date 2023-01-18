@@ -41,7 +41,7 @@ export default function Home() {
         />
         <HomeNews />
         <Heading
-          name={"ПАРТНЁРЫ"}
+          name={"НАШИ ПАРТНЁРЫ"}
           name_page={"посмотреть всё"}
           link={"/partners"}
           number={"04"}
