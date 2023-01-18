@@ -4,6 +4,12 @@
   }
   .about_diagnokim {
     .content_wrapper {
+      @media (max-width: 992px) {
+        display: block;
+        img {
+          width: 100% !important;
+        }
+      }
       display: grid;
       grid-template-columns: 50% 50%;
       .left_box {
@@ -20,6 +26,9 @@
   .link_catalog {
     text-align: center;
     a {
+      @media (max-width: 768px) {
+        max-width: 50% !important;
+      }
       display: block;
       margin: 0 auto;
       max-width: 30%;

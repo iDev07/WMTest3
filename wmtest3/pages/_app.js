@@ -12,6 +12,7 @@ import "../styles/export.scss";
 import "../styles/news.scss";
 import "../styles/MainSingle.scss";
 import "../styles/itservices.scss";
+import "../styles/consalting.scss";
 import "../styles/contacts.scss";
 import "../styles/bootstrap.min.css";
 import "../styles/MobileNav.scss";

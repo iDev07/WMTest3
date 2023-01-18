@@ -63,6 +63,12 @@
   }
   .all4u_services {
     .wrapper {
+      @media (max-width: 768px) {
+        display: block;
+        h3 {
+          max-width: 100% !important;
+        }
+      }
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
       .mycol {

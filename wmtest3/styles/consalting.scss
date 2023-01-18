@@ -1,6 +1,6 @@
-.ITservices {
+.Consalting {
   .main_back {
-    background: url("../public/images/it_back.png");
+    background: url("../public/images//consalting_back.png");
     background-position: left;
     .heading {
       p {
@@ -10,11 +10,27 @@
       }
     }
   }
+  .about_facts {
+    padding-bottom: 50px;
+    .grid-5 {
+      div {
+        height: 330px;
+        background-color: #242424;
+      }
+      p {
+        padding: 30px;
+        font-size: 17px;
+        line-height: 170%;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+      }
+    }
+  }
   .ads_services {
     .wrapper_ads {
       @media (max-width: 992px) {
         display: block;
-        max-width: 100%;
         .for_img {
           padding: 50px !important;
           padding-top: 20px !important;
@@ -24,23 +40,24 @@
           margin-top: 15px;
         }
       }
-      max-width: 80%;
+      max-width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 35% 65%;
       align-items: center;
       padding-bottom: 50px;
       .left_box {
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         .for_img {
           background-color: #242424;
           text-align: center;
+          padding: 100px;
+          padding-top: 20px;
           img {
-            padding: 40px;
+            width: 100%;
             text-align: center;
             object-fit: contain;
-            width: 100%;
           }
         }
       }
@@ -58,7 +75,6 @@
     .wrapper_ads_reverse {
       @media (max-width: 992px) {
         display: block;
-        max-width: 100%;
         .for_img {
           padding: 50px !important;
           padding-top: 20px !important;
@@ -73,19 +89,24 @@
         }
       }
       display: grid;
-      grid-template-columns: 45% 55%;
+      grid-template-columns: 65% 35%;
       align-items: center;
-      max-width: 80%;
+      max-width: 100%;
       margin: 0 auto;
       padding-bottom: 50px;
+      text-align: right;
       .right_box {
-        height: 380px;
+        height: 300px;
         overflow: hidden;
         .for_img {
-          text-align: center;
           background-color: #242424;
+          text-align: center;
+          padding: 100px;
+          padding-top: 20px;
           img {
-            padding: 30px;
+            width: 100%;
+            text-align: center;
+            object-fit: contain;
           }
         }
       }
