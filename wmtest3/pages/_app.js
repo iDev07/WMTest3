@@ -33,7 +33,7 @@ function Loading() {
       url === router.asPath &&
       setTimeout(() => {
         setLoading(false);
-      }, 1500);
+      }, 3000);
 
     router.events.on("routeChangeStart", handleStart);
     router.events.on("routeChangeComplete", handleComplete);
