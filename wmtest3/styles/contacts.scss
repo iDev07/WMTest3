@@ -5,6 +5,9 @@
   .contacs_p {
     margin-top: 50px;
     span {
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
       padding: 0 20px;
       font-size: 25px;
     }

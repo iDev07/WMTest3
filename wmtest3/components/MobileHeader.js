@@ -131,10 +131,10 @@ function MobileHeader() {
                 </ul>
               </li>
               <li onClick={handleClose}>
-                <Link href="/news"> {t("menu.main4")} </Link>
+                <Link href="/news/blog/"> {t("menu.main4")} </Link>
               </li>
               <li onClick={handleClose}>
-                <Link href="/contact"> {t("menu.main5")} </Link>
+                <Link href="/contacts"> {t("menu.main5")} </Link>
               </li>
             </ul>
             <div className="mob_footer"></div>

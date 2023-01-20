@@ -108,7 +108,7 @@ h2 {
     @media (max-width: 768px) {
       height: 130px;
       .number {
-        top: -42% !important;
+        top: -32% !important;
       }
       h1 {
         width: 90% !important;
@@ -125,7 +125,7 @@ h2 {
     .number {
       position: absolute;
       z-index: 1;
-      top: -115%;
+      top: -100%;
       margin: 0;
 
       p {
@@ -167,6 +167,9 @@ h2 {
     align-items: center;
     display: flex;
     .down_animation {
+      @media (max-width: 768px) {
+        left: 45%;
+      }
       position: absolute;
       bottom: 0;
       left: 49%;
@@ -335,6 +338,13 @@ h2 {
   grid-template-columns: 50% 50%;
 }
 .grid-3 {
+  @media (max-width: 768px) {
+    display: block;
+    div {
+      width: 100% !important;
+      margin: 30px 0;
+    }
+  }
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
