@@ -7,6 +7,33 @@
     }
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    .activeSub1 {
+      display: block !important;
+    }
+    .activeSub2 {
+      display: block !important;
+    }
+    .activeSub3 {
+      display: block !important;
+    }
+    .activeSub4 {
+      display: block !important;
+    }
+    .notactive1 {
+      display: none;
+    }
+    .notactive2 {
+      display: none;
+    }
+    .notactive2 {
+      display: none;
+    }
+    .notactive3 {
+      display: none;
+    }
+    .notactive4 {
+      display: none;
+    }
     .mycol {
       .top_sec {
         width: 100%;

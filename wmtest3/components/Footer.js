@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, use } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -8,6 +8,10 @@ import dynamic from "next/dynamic";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import Link from "next/link";
 function Footer() {
+  const [activeSub1, setActiveSub1] = useState("notactive1");
+  const [activeSub2, setActiveSub2] = useState("notactive2");
+  const [activeSub3, setActiveSub3] = useState("notactive3");
+  const [activeSub4, setActiveSub4] = useState("notactive4");
   const thisYear = new Date().getFullYear().toString();
   return (
     <div className="Footer">
@@ -58,10 +62,15 @@ function Footer() {
             </div>
           </div>
           <div className="mycol">
-            <div className="top_sec">
+            <div
+              className="top_sec"
+              onClick={() => {
+                setActiveSub1("activeSub1");
+              }}
+            >
               <h3>Наши услуги</h3>
             </div>
-            <div className="content">
+            <div className={`content  ${activeSub1}`}>
               <li>
                 <Link href="">
                   <ArrowForwardIosIcon />
@@ -107,10 +116,15 @@ function Footer() {
             </div>
           </div>
           <div className="mycol">
-            <div className="top_sec">
+            <div
+              className="top_sec"
+              onClick={() => {
+                setActiveSub2("activeSub2");
+              }}
+            >
               <h3>Полезные ссылки</h3>
             </div>
-            <div className="content">
+            <div className={`content  ${activeSub2}`}>
               <li>
                 <Link href="">
                   <ArrowForwardIosIcon />
@@ -131,10 +145,15 @@ function Footer() {
             </div>
           </div>
           <div className="mycol">
-            <div className="top_sec">
+            <div
+              className="top_sec"
+              onClick={() => {
+                setActiveSub3("activeSub3");
+              }}
+            >
               <h3>Контактные данные</h3>
             </div>
-            <div className="content">
+            <div className={`content  ${activeSub3}`}>
               <li>
                 <FmdGoodOutlinedIcon /> Узбекистан, г. Ташкент, улица Хумо, 57
               </li>
