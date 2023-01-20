@@ -21,7 +21,7 @@ import "../styles/Footer.scss";
 import "../styles/loading.scss";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
-
+import MainLoader from "../components/MainLoader";
 function Loading() {
   const router = useRouter();
 
@@ -252,12 +252,24 @@ function Loading() {
 }
 
 export default function App({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  });
   return (
     <>
       <Loading />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {loading === true ? (
+        <MainLoader />
+      ) : (
+        <Layout>
+          {" "}
+          <Component {...pageProps} />
+        </Layout>
+      )}
+      {/* <Layout></Layout> */}
     </>
   );
 }
