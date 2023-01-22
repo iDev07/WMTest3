@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="ru" translate="no">
       <Head>
         {/* <link
           href="https://fonts.cdnfonts.com/css/sf-pro-display"
@@ -36,7 +36,7 @@ export default function Document() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Logo" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Группа компаний World Miral" />
+        <meta property="twitter:title" content="Группа компаний" />
         <meta
           property="twitter:description"
           content="Группа компаний World Miral – крупная компания с многолетним опытом работы в Узбекистане. В нашу компанию входят предприятия и фирмы, специализирующиеся на производстве, экспорте, консалтинге и импорте."

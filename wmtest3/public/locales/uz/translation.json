@@ -7,19 +7,18 @@
     "main2": "Kompaniyalar guruhi haqida",
     "main3": "Biznes yo'nalishlari",
     "main4": "Yangiliklar",
-    "main5": "Kontaktlar"
+    "main5": "Aloqa "
   },
   "submenus": {
     "about1": "Biz haqimizda",
     "about2": "Jamoa",
     "about3": "Karyera",
-    "direct1": "Marketpleys",
-    "direct2": "Ishlab chiqarish",
-    "direct3": "Qayta ishlash",
-    "direct4": "Eksport",
-    "direct5": "Konsalting xizmati",
-    "direct6": "IT xizmatlar",
-    "direct7": "Tashqi reklama"
+    "directAll4u": "ALL4U Market",
+    "direct1": "Ishlab chiqarish",
+    "direct2": "Eksport",
+    "direct3": "IT xizmatlar",
+    "direct4": "Reklama",
+    "direct5": "Konsalting "
   },
   "homeMain": {
     "mainText1": "Biz sizga xizmat ko'rsatishdan juda ham mamnunmiz !",

@@ -1,6 +1,12 @@
 .Contacts {
   .main_back {
-    background: url("../public/images/contacts_back.png");
+    background: url("../public/images/c_back.png");
+    .heading {
+      p {
+        max-width: 70%;
+        margin: 20px auto;
+      }
+    }
   }
   .contacs_p {
     margin-top: 50px;

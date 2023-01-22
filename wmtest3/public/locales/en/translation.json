@@ -13,13 +13,12 @@
     "about1": "About company",
     "about2": "Team",
     "about3": "Career",
-    "direct1": "Marketplace",
-    "direct2": "Production",
-    "direct3": "Reproduction",
-    "direct4": "Export",
-    "direct5": "Consalting",
-    "direct6": "IT services",
-    "direct7": "Outdoor advertising"
+    "directAll4u": "ALL4U Market",
+    "direct1": "Production",
+    "direct2": "Export",
+    "direct3": "IT Services",
+    "direct4": "Advertising",
+    "direct5": "Consulting "
   },
   "homeMain": {
     "mainText1": "We are very happy to serve you!",

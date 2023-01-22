@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 function Header() {
   const defaultLang = localStorage.getItem("lang") || "uz";
   const [lang, setLang] = useState(defaultLang);
@@ -20,6 +21,7 @@ function Header() {
       setScroll("scrolled");
     }
   });
+  const { t } = useTranslation();
   return (
     <div className={`header_wrapper ${scroll}`}>
       <div className="header containerdev">
@@ -33,36 +35,36 @@ function Header() {
           <div className="main_links">
             <ul className="main_header_ul">
               <li>
-                <Link href="/about-us">О группа компаний</Link>
+                <Link href="/about-us">{t("menu.main2")}</Link>
                 <div className="hidden_links_one">
                   <li>
-                    <Link href="/about-us">О нас</Link>
+                    <Link href="/about-us">{t("submenus.about1")}</Link>
                   </li>
                   <li>
-                    <Link href="/team-members">Команда</Link>
+                    <Link href="/team-members">{t("submenus.about2")}</Link>
                   </li>
                   <li>
-                    <Link href="/join-us">Карьера</Link>
+                    <Link href="/join-us">{t("submenus.about3")}</Link>
                   </li>
                 </div>
               </li>
               <li>
-                <Link href="/produce">Направления бизнеса</Link>
+                <Link href="/produce">{t("menu.main3")}</Link>
                 <div className="hidden_links_one">
                   <li>
-                    <Link href="/produce">Produce</Link>
+                    <Link href="/produce">{t("submenus.direct1")}</Link>
                   </li>
                   <li>
-                    <Link href="/export">Export </Link>
+                    <Link href="/export">{t("submenus.direct2")} </Link>
                   </li>
                   <li>
-                    <Link href="/IT-services">IT services </Link>
+                    <Link href="/IT-services">{t("submenus.direct3")}</Link>
                   </li>
                   <li>
-                    <Link href="/advertising">Advertising</Link>
+                    <Link href="/advertising">{t("submenus.direct4")}</Link>
                   </li>
                   <li>
-                    <Link href="/consalting">Consalting</Link>
+                    <Link href="/consalting">{t("submenus.direct5")}</Link>
                   </li>
                 </div>
               </li>
@@ -70,10 +72,10 @@ function Header() {
                 <Link href="/all4umarket">ALL4U Market</Link>
               </li>
               <li>
-                <Link href="/news/blog">Новости</Link>
+                <Link href="/news/blog">{t("menu.main4")}</Link>
               </li>
               <li>
-                <Link href="/contacts">Контакты</Link>
+                <Link href="/contacts">{t("menu.main5")}</Link>
               </li>
               <li>
                 <select name="lang" value={lang} onChange={handleChange}>
