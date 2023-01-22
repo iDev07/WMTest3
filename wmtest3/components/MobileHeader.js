@@ -111,22 +111,22 @@ function MobileHeader() {
                 </p>
                 <ul className={`submenu2 ${subMenu2}`}>
                   <li onClick={handleClose}>
-                    <Link href="/all4umarket">{t("submenus.direct1")}</Link>
+                    <Link href="/all4umarket">{t("submenus.directAll4u")}</Link>
                   </li>
                   <li onClick={handleClose}>
-                    <Link href="/produce">{t("submenus.direct2")}</Link>
+                    <Link href="/produce">{t("submenus.direct1")}</Link>
                   </li>
                   <li onClick={handleClose}>
-                    <Link href="/export">{t("submenus.direct4")}</Link>
+                    <Link href="/export">{t("submenus.direct2")}</Link>
                   </li>
                   <li onClick={handleClose}>
                     <Link href="/consalting">{t("submenus.direct5")}</Link>
                   </li>
                   <li onClick={handleClose}>
-                    <Link href="/IT-services">{t("submenus.direct6")}</Link>
+                    <Link href="/IT-services">{t("submenus.direct3")}</Link>
                   </li>
                   <li onClick={handleClose}>
-                    <Link href="/promotion">{t("submenus.direct7")}</Link>
+                    <Link href="/advertising">{t("submenus.direct4")}</Link>
                   </li>
                 </ul>
               </li>

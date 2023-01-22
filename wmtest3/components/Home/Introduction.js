@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useTranslation } from "react-i18next";
 function Introduction() {
+  const { t } = useTranslation();
   return (
     <div className="Introduction">
       <div className="wrapper">
@@ -11,16 +13,11 @@ function Introduction() {
         <div className="content">
           <div className="main containerdev">
             <h1 className="heading">
-              <span>СОЗДАЁМ</span> ПРОДУКТЫ ДЛЯ ЛЮДЕЙ
+              <span>{t("homeMain.shortWord")}</span> {t("homeMain.mainText")}
             </h1>
-            <p className="short_about">
-              Группа компаний World Miral – крупная компания с многолетним
-              опытом работы в Узбекистане. В нашу компанию входят предприятия и
-              фирмы, специализирующиеся на производстве, экспорте, консалтинге и
-              импорте.
-            </p>
+            <p className="short_about">{t("homeMain.mainDes1")}</p>
             <div className="border_g">
-              <Link href="about-us">УЗНАТЬ ПОДРОБНЕЕ</Link>
+              <Link href="/about-us">{t("homeMain.moreRead")}</Link>
             </div>
             <div className="down_animation">
               <div>

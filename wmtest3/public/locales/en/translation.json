@@ -11,27 +11,25 @@
   },
   "submenus": {
     "about1": "About company",
-    "about2": "Team",
+    "about2": "Command",
     "about3": "Career",
     "directAll4u": "ALL4U Market",
     "direct1": "Production",
     "direct2": "Export",
-    "direct3": "IT Services",
-    "direct4": "Advertising",
-    "direct5": "Consulting "
+    "direct3": "IT services",
+    "direct4": "Advertisement",
+    "direct5": "Consulting"
   },
   "homeMain": {
-    "mainText1": "We are very happy to serve you!",
-    "mainText2": "Do you want your business to go international?",
-    "mainText3": "Online shopping is convenient and profitable",
+    "mainText": "CREATE PRODUCTS FOR PEOPLE",
+    "shortWord": "we",
     "mainDes1": "The World Miral group of companies is a large company with many years of experience in Uzbekistan. Our company includes enterprises and firms specialized in production, export, consulting and import.",
-    "mainDes2": "Through our partner company TURKCERT, you can obtain internationally recognized ISO 9001, ISO 14001, ISO 22000, ISO 13485, ISO/TS 16949, ISO 18000, ISO 18513, ISO 10002, ISO 17100, CE CERTIFICATION, ISO 27001, TEST, you can get GOST-R, HYB, TSEK certificates.",
-    "mainDes3": "ALL4U - a marketplace is a new platform in Uzbekistan for exporting your products to other countries or importing the raw materials you need. We also have retail on our platform."
+    "moreRead": "Learn more"
   },
   "directions": {
     "intro": "Business directions",
     "type1": "Consulting services",
-    "type2": "Export",
+    "type2": "Export products",
     "type3": "Processing and production",
     "type4": "Marketplace",
     "about1": "ALL4U.MARKET provides consulting support and assistance to companies in declaring goods at the border when exporting and importing goods through an international trading platform. Our company helps in declaring together with F-ORIENT LUX LOGISTIK.",
@@ -50,7 +48,7 @@
     "desc3": "Our team is constantly working to improve their skills and everyone is a positive influence"
   },
   "news": {
-    "intro": "News",
+    "intro": "our news",
     "news1": "According to the decision of the Cabinet of Ministers of the Republic of Uzbekistan No. 826 dated 31.12.2020, our company has started to provide consulting services to exporters",
     "news2": "ALL4U.Market, another one of our projects, has been launched",
     "shortDes1": "This Regulation defines the procedure for providing financial assistance to exporting organizations by the Export Promotion Agency under the Ministry of Investments and Foreign Trade of the Republic of Uzbekistan (hereinafter - the Agency) in order to support export activities.",
@@ -58,12 +56,26 @@
     "fullNews1": "1. This Regulation establishes the procedure for providing financial assistance to exporting organizations by the Export Promotion Agency under the Ministry of Investments and Foreign Trade of the Republic of Uzbekistan (hereinafter - the Agency) in order to support export activities 2. The following basic concepts are used in this Regulation: business training is a form of training aimed at improving the knowledge and skills of entrepreneurs, their employees (employees) and the efficiency of their activities in a certain direction, including online training. form of education; business forum - a meeting of business representatives dedicated to the discussion of business issues in a certain direction, field and industry, including an online meeting; exhibition-fair events - abroad and in O' international, interregional, interregional exhibitions, conferences, festivals, fairs and expos of business entities organized in the Republic of Uzbekistan other activities aimed at developing rt opportunities, including online activities; business seminars - a form of interactive educational-practical event, including an online interactive educational-practical event, held for the purpose of exchanging experience, knowledge and information related to business activities; exporting organizations - business entities registered in the Republic of Uzbekistan and carrying out export activities or wishing to start them; advertising campaign (presentation) - implementation of comprehensive activities aimed at a certain period and market, aimed at achieving marketing goals of increasing the volume of exports, in particular, introducing products (services), offering them, and attracting customers; standards — international (interstate, regional) standards and national standards of foreign countries developed by standardization organizations; certificate of conformity - a document issued according to the rules of the certification system to confirm the conformity of the certified product with the specified requirements; trade missions - events organized for the purpose of establishing partnership relations between exporting organizations and potential foreign buyers, as well as conducting product presentations, discussing the terms of future export contracts with potential foreign buyers and concluding contracts. 3. The main directions of providing financial assistance to exporting organizations by the Agency are as follows: introduction of standards and obtaining certificates of conformity; conducting presentations and advertising campaigns in order to bring local products and brands (trademarks) to foreign markets; participation in international tenders and competitions; registration of national products and brands (trademarks) in foreign authorized bodies; Organization of business seminars, trainings, trade missions and business forums involving local and foreign companies and experts in order to increase export potential for entrepreneurs in the territories of the Republic of Uzbekistan; participation in business seminars, trainings, trade missions and business forums in foreign countries; participation in exhibition-fair events; sending product samples to foreign buyers, foreign trade houses and showrooms of exporting organizations for the purpose of introducing them, including diplomatic missions of the Republic of Uzbekistan abroad for assistance in finding buyers."
   },
   "partners": {
-    "intro": "Partners",
+    "intro": "Our Partners",
     "desc": "Collaboration with companies in various fields helps to achieve success and make the future better"
   },
   "footer": {
-    "company": "World Miral Group of Companies",
-    "rights": "All rights reserved"
+    "heading1": "About Company",
+    "heading2": "Our Services",
+    "heading3": "Useful Links",
+    "heading4": "Contact Information",
+    "shortAbout": "World Miral group of companies was founded in 2019 and operates in several business lines at the same time.",
+    "link1": "Export Products",
+    "link2": "Consulting services",
+    "link3": "Production",
+    "link4": "External advertising",
+    "link5": "IT Services",
+    "link6": "ALL4U Market",
+    "link7": "Join Company",
+    "link8": "News",
+    "link9": "About Group of Companies",
+    "link10": "Uzbekistan, Tashkent, Khuma Street, 57",
+    "link11": "Mon-Fri | 9.00 - 18.00"
   },
   "aboutPage": {
     "intro": "World Miral group of companies operates in many business sectors in Uzbekistan",

@@ -20,30 +20,30 @@ export default function Home() {
       <main className="main">
         <Introduction />
         <Heading
-          name={"Почему нам доверяют ?"}
+          name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
-          link={"/join-us"}
+          link={"/"}
           number={"01"}
         />
         <Advantages />
         <Heading
-          name={"Направления бизнеса"}
+          name={t("directions.intro")}
           name_page={"посмотреть всё"}
-          link={"/join-us"}
+          link={"/produce"}
           number={"02"}
         />
         <Directions />
         <Heading
-          name={"Наши новости"}
+          name={t("news.intro")}
           name_page={"посмотреть всё"}
-          link={"/join-us"}
+          link={"/news/blog"}
           number={"03"}
         />
         <HomeNews />
         <Heading
-          name={"НАШИ ПАРТНЁРЫ"}
+          name={t("partners.intro")}
           name_page={"посмотреть всё"}
-          link={"/partners"}
+          link={"/export"}
           number={"04"}
         />
         <Partners />

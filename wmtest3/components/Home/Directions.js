@@ -1,43 +1,45 @@
 import React from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 function Directions() {
+  const { t } = useTranslation();
   return (
     <div className="Directions">
       <div className="wrapper">
         <div className="myrow">
           <div className="mycol">
-            <Link href="/">
+            <Link href="/consalting">
               <div className="main_wrapper">
                 {/* <img src="images/direct1.png" /> */}
-                <h1>Консалтинговые услуги</h1>
-                <p className="border_g">ПОДРОБНЕЕ</p>
+                <h1>{t("directions.type1")}</h1>
+                <p className="border_g">{t("directions.more")}</p>
               </div>
             </Link>
           </div>
           <div className="mycol">
-            <Link href="/">
+            <Link href="/export">
               <div className="main_wrapper">
                 {/* <img src="images/direct1.png" /> */}
-                <h1>Экспорт товаров</h1>
-                <p className="border_g">ПОДРОБНЕЕ</p>
+                <h1>{t("directions.type2")}</h1>
+                <p className="border_g">{t("directions.more")}</p>
               </div>
             </Link>
           </div>
           <div className="mycol">
-            <Link href="/">
+            <Link href="/produce">
               <div className="main_wrapper">
                 {/* <img src="images/direct1.png" /> */}
-                <h1>Переработка и производство</h1>
-                <p className="border_g">ПОДРОБНЕЕ</p>
+                <h1>{t("directions.type3")}</h1>
+                <p className="border_g">{t("directions.more")}</p>
               </div>
             </Link>
           </div>
           <div className="mycol">
-            <Link href="/">
+            <Link href="/all4umarket">
               <div className="main_wrapper">
                 {/* <img src="images/direct1.png" /> */}
-                <h1>Торговая площадка</h1>
-                <p className="border_g">ПОДРОБНЕЕ</p>
+                <h1>{t("directions.type4")}</h1>
+                <p className="border_g">{t("directions.more")}</p>
               </div>
             </Link>
           </div>

@@ -7,26 +7,24 @@ import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import dynamic from "next/dynamic";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 function Footer() {
   const [activeSub1, setActiveSub1] = useState("notactive1");
   const [activeSub2, setActiveSub2] = useState("notactive2");
   const [activeSub3, setActiveSub3] = useState("notactive3");
   const [activeSub4, setActiveSub4] = useState("notactive4");
   const thisYear = new Date().getFullYear().toString();
+  const { t } = useTranslation();
   return (
     <div className="Footer">
       <div className="containerdev">
         <div className="wrapper">
           <div className="mycol">
             <div className="top_sec">
-              <h3>О компании</h3>
+              <h3>{t("footer.heading1")}</h3>
             </div>
             <div className="content">
-              <p>
-                Группа компаний World Miral создана в 2019 году с целью занять
-                лидирующие позиции одновременно в нескольких направлениях
-                бизнеса.
-              </p>
+              <p>{t("footer.shortAbout")}</p>
             </div>
             <div className="socials">
               <li>
@@ -68,49 +66,44 @@ function Footer() {
                 setActiveSub1("activeSub1");
               }}
             >
-              <h3>Наши услуги</h3>
+              <h3>{t("footer.heading2")}</h3>
             </div>
             <div className={`content  ${activeSub1}`}>
               <li>
-                <Link href="">
+                <Link href="/export">
                   <ArrowForwardIosIcon />
-                  Экспорт продукции
+                  {t("footer.link1")}
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/consalting">
                   <ArrowForwardIosIcon />
-                  Консалтинговые услуги
+                  {t("footer.link2")}
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/produce">
                   <ArrowForwardIosIcon />
-                  Производство товаров
+                  {t("footer.link3")}
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/advertising">
                   <ArrowForwardIosIcon />
-                  Наружная реклама
+                  {t("footer.link4")}
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/IT-services">
+                  <ArrowForwardIosIcon />
+                  {t("footer.link5")}
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/all4umarket">
                   <ArrowForwardIosIcon />
-                  Экспорт продукции
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <ArrowForwardIosIcon />
-                  Услуги IT-сферы
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <ArrowForwardIosIcon />
-                  Маркетплейс
+                  {t("footer.link6")}
                 </Link>
               </li>
             </div>
@@ -122,24 +115,25 @@ function Footer() {
                 setActiveSub2("activeSub2");
               }}
             >
-              <h3>Полезные ссылки</h3>
+              <h3>{t("footer.heading3")}</h3>
             </div>
             <div className={`content  ${activeSub2}`}>
               <li>
-                <Link href="">
+                <Link href="/join-us">
                   <ArrowForwardIosIcon />
-                  Карьера в WorldMiral
+                  {t("footer.link7")}
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="/news/blog">
                   <ArrowForwardIosIcon />
-                  Новости
+                  {t("footer.link8")}
                 </Link>
               </li>
               <li>
-                <Link href="">
-                  <ArrowForwardIosIcon />О группе компаний
+                <Link href="/about-us">
+                  <ArrowForwardIosIcon />
+                  {t("footer.link9")}
                 </Link>
               </li>
             </div>
@@ -151,11 +145,11 @@ function Footer() {
                 setActiveSub3("activeSub3");
               }}
             >
-              <h3>Контактные данные</h3>
+              <h3>{t("footer.heading4")}</h3>
             </div>
             <div className={`content  ${activeSub3}`}>
               <li>
-                <FmdGoodOutlinedIcon /> Узбекистан, г. Ташкент, улица Хумо, 57
+                <FmdGoodOutlinedIcon /> {t("footer.link10")}
               </li>
               <li>
                 <a href="tel: +99871 230 38 83">
@@ -168,7 +162,8 @@ function Footer() {
                 info@example.com
               </li>
               <li>
-                <AccessTimeOutlinedIcon /> Пн-Вс | 9.00 - 18.00
+                <AccessTimeOutlinedIcon />
+                {t("footer.link11")}
               </li>
             </div>
           </div>
