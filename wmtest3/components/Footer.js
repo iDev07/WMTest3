@@ -172,7 +172,9 @@ function Footer() {
       <div className="bottom_copyright">
         <div className="containerdev">
           <div className="right_box">
-            <p>{`WorldMiral © ${thisYear} | Все права защищены`}</p>
+            <p>
+              {`WorldMiral © ${thisYear} | `} {t("footer.rights")}
+            </p>
           </div>
         </div>
       </div>
