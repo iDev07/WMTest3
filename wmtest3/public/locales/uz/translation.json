@@ -80,8 +80,10 @@
     "rights": "Barcha huquqlar himoyalangan"
   },
   "aboutPage": {
+    "companyName": "World Miral",
     "intro": "World Miral kompaniyalar guruhi O'zbekistondagi ko'plab biznes sohalarida o'z faoliyatini olib boradi",
     "aboutCompany": "World Miral kompaniyalar guruhi bir vaqtning o'zida bir nechta biznes yo'nalishlarida yetakchi o'rinni egallash maqsadida 2019-yilda tashkil etilgan. Bugungi kunda tashkilotimiz ishlab chiqarish, konsalting, qayta ishlash, tashqi reklama, eksport va importga har tomonlama ko‘maklashish, shuningdek, IT sohalarida istiqbolli loyihalar bilan shug‘ullanadi. Bizning kompaniyamiz va jamoamiz erishilgan natijalar va yutuqlar bilan cheklanib qolmaydi. Kompaniyamiz ishonch bilan olg'a intilmoqda va bundan ham yuqori natijalarga erishishga tayyor.",
+    "heading1": "Kompaniya haqida",
     "directorName": "Aslanov Mirabbos Farhodovich",
     "directorPosition": "Bosh direktor",
     "directorAbout": "«O'zingizni bir xil maqsadlarga ega bo'lganlar bilan o'rab oling» Aslanov Mirabbos 2019-yilda boshqalar qatorida nafaqat kompaniya yaratish maqsadida World Miral kompaniyalar guruhini yaratdi. World Miral guruhining asosiy farqlaridan biri bu guruh tarkibiga kiruvchi kompaniyalar o'rtasida ham, ushbu kompaniyalar tarkibidagi bo'limlar va bo'limlar o'rtasidagi ishning muvofiqligidir. Aslanov Mirabbos davlat idoralarida va yirik korxonalarni boshqarishda tajribaga ega. Uning rahbarligi ostida 4 yil davomida kompaniya keng ko'lamli ishlarga erishdi va bu chegara emas.«Men uchun nafaqat jamoa yaratish, balki bir ishtiyoq va bir orzu bilan birlashgan kuchli va birdam oilani yaratish - kelajakka e'tibor qaratadigan ulkan kompaniya yaratish har doim muhim bo'lgan»",
@@ -99,6 +101,7 @@
     "valuesDesc5": "Korxonamiz mahsulotlari nafaqat sifatli, balki aholi uchun ham zarur bo‘lgan korxonalar bilan hamkorlik qilishga harakat qiladi.",
     "valuesDesc6": "Birgalikda harakat qilamiz, bir-birimizga quloq solamiz va tushunamiz",
     "teamIntro": "Muvaffaqiyat professional jamoaga bog'liq",
+    "ourTeam": "Bizning jamoa",
     "teamBtn": "Bosing",
     "teamDirector": "Aliyev Omonilla ",
     "teamMember1": "Sultonova Xurshida ",
@@ -165,6 +168,7 @@
   "bDirections": {
     "mIntro": "MDH mamlakatlarida birinchi marta kompaniyamiz all4u.market xalqaro marketpleysini ishga tushirdi",
     "mSmallAbout": "Bizning onlayn platformamiz eksportga yo'naltirilgan barcha tovarlar ishlab chiqaruvchilari, faoliyati tovarlar importi bilan bog'liq bo'lgan barcha foydalanuvchilar uchun, shuningdek, tovarlarni onlayn xarid qilishdan manfaatdor bo'lgan jismoniy shaxslar uchun mo'ljallangan. Birinchidan, biz bilan birga daromad olish imkoniyatini beramiz. Bizdan va platformamiz orqali ulgurji xarid qiling va bizdan chakana soting. Asosiy mezonlar - mahsulotlarning narxi va sifati. Bizning bozorimiz vositachi bo'lib, sotuvchilar va xaridorlarning bir-birlarini topishlariga yordam beradi va ularni osonlashtiradi.",
+    "mShortIntro": "KOMPANIYATIMIZ ALL4U.MARKET XALQARO Marketpleysini sizlarga taqdim etadi, UNDA siz istalgan mahsulotni import va eksport qilishingiz mumkin",
     "mFacts1": "Korxonalar soni",
     "mFacts2": "Mahsulotlar soni",
     "mFacts3": "Filiallar soni",

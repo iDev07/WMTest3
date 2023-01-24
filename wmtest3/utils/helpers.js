@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 export const Member = ({ img, about, fio, position }) => {
   const [visible, setVisible] = useState(false);
-  //   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="mycol_member">
       <div className="about">
@@ -13,7 +13,7 @@ export const Member = ({ img, about, fio, position }) => {
         <h3>{fio}</h3>
         <p>{position}</p>
         <button className="border_g" onClick={() => setVisible(true)}>
-          Подробнее
+          {t("aboutPage.teamBtn")}
         </button>
         <Modal
           title=""

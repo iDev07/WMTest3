@@ -81,6 +81,7 @@
   "aboutPage": {
     "intro": "World Miral group of companies operates in many business sectors in Uzbekistan",
     "aboutCompany": "The World Miral group of companies was established in 2019 with the aim of taking a leading position in several business lines at the same time. Today, our organization is involved in production, consulting, processing, outdoor advertising, all-round support for export and import, as well as promising projects in the IT sector. Our company and team are not limited to achieved results and achievements. Our company is moving forward with confidence and is ready to achieve even higher results.",
+    "heading1": "About Company",
     "directorName": "Aslanov Mirabbos Farhodovich",
     "directorPosition": "CEO",
     "directorAbout": "«Surround yourself with like-minded people» In 2019, Aslanov Mirabbos, among others, created the World Miral group of companies in order not only to create a company. One of the main differences of the World Miral group is the companies included in the group is the consistency of work between departments and departments within these companies. Aslanov Mirabbos has experience in government agencies and management of large enterprises. Under his leadership, the company has achieved a wide range of work for 4 years, and this is not the limit. «It has always been important for me not only to create a team, but also to create a strong and united family united by one passion and one dream - to create a great company that focuses on the future»",
@@ -98,6 +99,7 @@
     "valuesDesc5": "Our company tries to cooperate with enterprises whose products are not only of high quality, but also necessary for the population.",
     "valuesDesc6": "We act together, listen and understand each other",
     "teamIntro": "Success depends on professional team",
+    "ourTeam": "Our Team",
     "teamBtn": "Click",
     "teamDirector": "Aliyev Omonilla",
     "teamMember1": "Sultonova Xurshida ",
@@ -163,6 +165,7 @@
   },
   "bDirections": {
     "mIntro": "For the first time in the CIS countries, our company launched the all4u.market international marketplace",
+    "mShortIntro": "OUR COMPANY offers you the ALL4U.MARKET international marketplace where you can import and export any product",
     "mSmallAbout": "Our online platform is intended for all manufacturers of export-oriented goods, for all users whose activities are related to the import of goods, as well as for individuals who are interested in buying goods online. First, we give the opportunity to earn with us. Buy wholesale from us and through our platform and also sell retail from us. The main criteria are the price and quality of products. Our Marketplace acts as an intermediary, helping and making it easier for sellers and buyers to find each other.",
     "mFacts1": "Number of companies",
     "mFacts2": " Number of products ",
