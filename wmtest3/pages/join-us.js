@@ -2,11 +2,13 @@ import React from "react";
 import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
+import { useTranslation } from "react-i18next";
 function JoinUs() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>Join us</title>
+        <title>{t("aboutPage.carrerIntro")}</title>
       </Head>
       <div className="JoinUs">
         <div className="main_back wrapper">
@@ -14,13 +16,8 @@ function JoinUs() {
             <div className="inner_wrap">
               <div className="with_anime">
                 <h1 className="heading">
-                  станьте частью нашей <span>команды</span>
-                  <p>
-                    Группа компаний World Miral – ответственная и
-                    целеустремлённая компания, которая стремиться выйти на
-                    международный уровень, взяв для себя главную ценность это
-                    честность и оперативность.
-                  </p>
+                  {t("aboutPage.carrerIntro")}
+                  <p>{t("aboutPage.carrerDesc")}</p>
                 </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
@@ -39,56 +36,48 @@ function JoinUs() {
             </div>
           </div>
         </div>
-        <LineHeading
-          name_section={"Почему стоит начать карьеру в WORLDMIRAL ?"}
-        />
+        <LineHeading name_section={t("aboutPage.headingAdvan")} />
         <div className="advantages_company">
           <div className="containerdev">
             <div className="uni_p">
-              <p>
-                Для развития компании в соответствии с мировыми стандартами
-                сотрудничаем с иностранными специалистами в каждой сфере
-                деятельности. Компания преимущественно отличается современными и
-                комфортными условиями, прозрачностью системы оплаты, и
-                возможностью стремительного карьерного роста.
-              </p>
+              <p>{t("aboutPage.smallAbout1")}</p>
             </div>
             <div className="wrapper">
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer1.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages1")}</p>
               </div>
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer2.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages2")}</p>
               </div>
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer3.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages3")}</p>
               </div>
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer4.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages4")}</p>
               </div>
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer5.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages5")}</p>
               </div>
               <div className="mycol">
                 <div className="img_wrapper">
                   <img src="images/carer6.png" />
                 </div>
-                <p>Стабильный доход</p>
+                <p>{t("aboutPage.adventages6")}</p>
               </div>
             </div>
           </div>
@@ -96,50 +85,36 @@ function JoinUs() {
         <div className="youngs_back">
           <div className="wrapper">
             <div className="containerdev">
-              <h1 className="heading">
-                Молодые специалисты – это <span>будущее</span> компании.
-              </h1>
+              <h1 className="heading">{t("aboutPage.students")}</h1>
             </div>
           </div>
         </div>
         <div className="light_dark ">
           <div className="containerdev">
-            <p className="uni_p">
-              Группа компаний “World Miral” активно поддерживает и привлекает к
-              работе молодых специалистов, готовых работать над собой,
-              приобретать необходимый опыт работы, профессиональные навыки,
-              проявить себя и развивать бизнес, привнося новые, креативные идеи.
-              “Если бизнес планирует свое развитие на несколько лет вперед, то
-              без молодых специалистов никак не обойтись!”
-            </p>
+            <p className="uni_p">{t("aboutPage.smallAbout3")}</p>
           </div>
         </div>
-        <LineHeading name_section={"ЦЕННОСТИ нашей компании"} />
+        <LineHeading name_section={t("aboutPage.headingValues")} />
         <div className="company_values">
           <div className="containerdev">
-            <p>
-              Неотъемлемую часть нашей компании должны составлять инициативные
-              сотрудники, готовые работать и развиваться. Под руководством
-              сильного и ответственного руководства каждый из сотрудников легко
-              и быстро совершенствуется и раскрывает свой потенциал.
-            </p>
+            <p>{t("aboutPage.smallAbout2")}</p>
             <div className="wrapper">
               <ul>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
+                <li>{t("aboutPage.done1")}</li>
+                <li>{t("aboutPage.done2")}</li>
+                <li>{t("aboutPage.done3")}</li>
+                <li>{t("aboutPage.done4")}</li>
               </ul>
               <ul>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
-                <li>Сертификация</li>
+                <li>{t("aboutPage.done5")}</li>
+                <li>{t("aboutPage.done6")}</li>
+                <li>{t("aboutPage.done7")}</li>
+                <li>{t("aboutPage.done8")}</li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="vacancies">
+        {/* <div className="vacancies">
           <div className="wrapper">
             <div className="containerdev">
               <div className="top_section">
@@ -184,7 +159,7 @@ function JoinUs() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -33,7 +33,7 @@ function Loading() {
       url === router.asPath &&
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 2000);
 
     router.events.on("routeChangeStart", handleStart);
     router.events.on("routeChangeComplete", handleComplete);
@@ -256,11 +256,11 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
   });
   return (
     <>
-      <Loading />
+      {/* <Loading /> */}
       {loading === true ? (
         <MainLoader />
       ) : (
@@ -269,7 +269,6 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       )}
-      {/* <Layout></Layout> */}
     </>
   );
 }

@@ -4,16 +4,18 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import VisibilitySensor from "react-visibility-sensor";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 import CountUp from "react-countup";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 function Export() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>Export</title>
+        <title>{t("bDirections.eIntro")}</title>
       </Head>
       <div className="Export">
         <div className="main_back wrapper">

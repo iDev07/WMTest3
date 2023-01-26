@@ -4,11 +4,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 function All4uMarket() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>ALL4U Market</title>
+        <title>{t("bDirections.mIntro")}</title>
       </Head>
       <div className="All4uMarket">
         <div className="main_back wrapper">
@@ -16,11 +19,8 @@ function All4uMarket() {
             <div className="inner_wrap">
               <div className="with_anime">
                 <h1 className="heading">
-                  <span>ВПЕРВЫЕ</span> В СТАРАНХ СНГ
-                  <p className="exists_p">
-                    Наша компания запустила международный Маркетплейс
-                    ALL4U.market, в котором собраны товары со всего мира.
-                  </p>
+                  {t("bDirections.mIntro")}
+                  <p className="exists_p">{t("bDirections.mShortIntro")}</p>
                 </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
@@ -42,17 +42,7 @@ function All4uMarket() {
         <LineHeading name_section={"ALL4U MARKET"} />
         <div className="about_project light_dark">
           <div className="containerdev">
-            <p className="uni_p">
-              Наша онлайн – платформа предназначена для всех производителей
-              экспорто ориентированных товаров, для всех пользователей чья
-              деятельность связанна с импортом товаров, а также для физических
-              лиц кому интересны покупки товаров онлайн. В первые мы даём
-              возможность зарабатывать вместе с нами. Покупать оптом у нас и
-              через нашу платформу и так же у нас продавать в розницу. Главными
-              критериями являются цена и качество продукции. Наш Маркетплейс
-              выступает в роли посредника, помогая и облегчая продавцам и
-              покупателям найти друг друга.
-            </p>
+            <p className="uni_p">{t("bDirections.mSmallAbout")}</p>
             <div className="results_numbers">
               <div className="num_wrapper">
                 <div className="mycol">
@@ -64,7 +54,7 @@ function All4uMarket() {
                         </VisibilitySensor>
                       )}
                     </CountUp>
-                    <p>Companies</p>
+                    <p>{t("bDirections.mFacts1")}</p>
                   </div>
                 </div>
                 <div className="mycol">
@@ -76,7 +66,7 @@ function All4uMarket() {
                         </VisibilitySensor>
                       )}
                     </CountUp>
-                    <p>Companies</p>
+                    <p>{t("bDirections.mFacts2")}</p>
                   </div>
                 </div>
                 <div className="mycol">
@@ -88,14 +78,14 @@ function All4uMarket() {
                         </VisibilitySensor>
                       )}
                     </CountUp>
-                    <p>Companies</p>
+                    <p>{t("bDirections.mFacts3")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <LineHeading name_section={"цели, которые мы преследуем"} />
+        <LineHeading name_section={t("bDirections.mHeadingGoals")} />
         <div className="offers">
           <div className="p-5 light_dark ">
             <div className="containerdev">
@@ -105,11 +95,11 @@ function All4uMarket() {
                     <img src="images/correct_icon.svg" />
                   </div>
                   <div className="content">
-                    <p>Обеспечить удобную схему оформления заказа:</p>
+                    <p>{t("bDirections.mTask1")}</p>
                     <ul>
-                      <li>Выбор товаров и добавление их в корзину;</li>
-                      <li>Выбор товаров и добавление их в корзину;</li>
-                      <li>Выбор товаров и добавление их в корзину;</li>
+                      <li>{t("bDirections.mTask1br1")}</li>
+                      <li>{t("bDirections.mTask1br2")}</li>
+                      <li>{t("bDirections.mTask1br3")}</li>
                     </ul>
                   </div>
                 </div>
@@ -118,7 +108,7 @@ function All4uMarket() {
                     <img src="images/correct_icon.svg" />
                   </div>
                   <div className="content">
-                    <p>Обеспечить удобную схему оформления заказа:</p>
+                    <p>{t("bDirections.mTask2")}</p>
                   </div>
                 </div>
                 <div className="mycol">
@@ -126,7 +116,7 @@ function All4uMarket() {
                     <img src="images/correct_icon.svg" />
                   </div>
                   <div className="content">
-                    <p>Обеспечить удобную схему оформления заказа:</p>
+                    <p>{t("bDirections.mTask3")}</p>
                   </div>
                 </div>
                 <div className="mycol">
@@ -134,55 +124,55 @@ function All4uMarket() {
                     <img src="images/correct_icon.svg" />
                   </div>
                   <div className="content">
-                    <p>Обеспечить удобную схему оформления заказа:</p>
+                    <p>{t("bDirections.mTask4")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <LineHeading name_section={"Наши услуги"} />
+        <LineHeading name_section={t("bDirections.mServices")} />
         <div className="all4u_services light_dark p-5">
           <div className="containerdev">
             <div className="wrapper">
               <div className="mycol">
-                <a href="">
+                <a href="https://all4u.market/wholesale/services/garantee/">
                   <div className="inner_wrap">
                     <img src="images/services1.png" />
                   </div>
-                  <h3>торговая гарантия</h3>
+                  <h3>{t("bDirections.mSec1")}</h3>
                 </a>
               </div>
               <div className="mycol">
-                <a href="">
+                <a href="https://all4u.market/wholesale/services/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F/">
                   <div className="inner_wrap">
                     <img src="images/services2.png" />
                   </div>
-                  <h3>торговая гарантия</h3>
+                  <h3>{t("bDirections.mSec2")}</h3>
                 </a>
               </div>
               <div className="mycol">
-                <a href="">
+                <a href="https://all4u.market/wholesale/services/dilevery/">
                   <div className="inner_wrap">
                     <img src="images/services3.png" />
                   </div>
-                  <h3>торговая гарантия</h3>
+                  <h3>{t("bDirections.mSec3")}</h3>
                 </a>
               </div>
               <div className="mycol">
-                <a href="">
+                <Link href="/advertising">
                   <div className="inner_wrap">
                     <img src="images/services4.png" />
                   </div>
-                  <h3>торговая гарантия</h3>
-                </a>
+                  <h3>{t("bDirections.mSec4")}</h3>
+                </Link>
               </div>
               <div className="mycol">
-                <a href="">
+                <a href="https://all4u.market/wholesale/services/declaration-ru/">
                   <div className="inner_wrap">
                     <img src="images/services5.png" />
                   </div>
-                  <h3>торговая гарантия</h3>
+                  <h3>{t("bDirections.mSec5")}</h3>
                 </a>
               </div>
             </div>
@@ -191,7 +181,7 @@ function All4uMarket() {
         <div className="link_all4u p-5 light_dark">
           <div className="wrapper">
             <a href="https://all4u.market" className="border_g">
-              перейти на all4u.market
+              {t("bDirections.goAll4u")}
             </a>
           </div>
         </div>
