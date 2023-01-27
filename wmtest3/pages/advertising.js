@@ -2,11 +2,13 @@ import React from "react";
 import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
+import { useTranslation } from "react-i18next";
 function Advertising() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>Produce</title>
+        <title>{t("bDirections.advIntro")}</title>
       </Head>
       <div className="Advertising">
         <div className="main_back wrapper">
@@ -14,12 +16,8 @@ function Advertising() {
             <div className="inner_wrap">
               <div className="with_anime">
                 <h1 className="heading">
-                  <span>наружная</span> реклама
-                  <p>
-                    Полноценный маркетинг начиная от продвижения на платформе
-                    ALL4U.MARKET и заканчивая продвижением через различные
-                    социальные платформы по всему миру
-                  </p>
+                  {t("bDirections.advIntro")}
+                  <p>{t("bDirections.itIntro")}</p>
                 </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
@@ -38,7 +36,7 @@ function Advertising() {
             </div>
           </div>
         </div>
-        <LineHeading name_section={"Предоставляемые услуги"} />
+        <LineHeading name_section={t("bDirections.itTitle")} />
         <div className="ads_services light_dark p-5">
           <div className="containerdev">
             <div className="wrapper_ads">
@@ -48,30 +46,12 @@ function Advertising() {
                 </div>
               </div>
               <div className="right_box">
-                <p>
-                  Внешняя реклама – это рекламные сообщения, которые размещены
-                  на внешних поверхностях зданий и транспортов. К таким видам
-                  реклам относятся: текстовые, графические, либо любые другие
-                  описания товаров и услуг. К наружной рекламе относят звуковую
-                  рекламу, и это единственный вид, который нельзя
-                  проигнорировать. А также рекламные сообщения, которые
-                  размещены не только снаружи, но внутри магазинов и торговых
-                  площадок.
-                </p>
+                <p>{t("bDirections.itDesc1")}</p>
               </div>
             </div>
             <div className="wrapper_ads_reverse">
               <div className="left_box">
-                <p>
-                  Внешняя реклама – это рекламные сообщения, которые размещены
-                  на внешних поверхностях зданий и транспортов. К таким видам
-                  реклам относятся: текстовые, графические, либо любые другие
-                  описания товаров и услуг. К наружной рекламе относят звуковую
-                  рекламу, и это единственный вид, который нельзя
-                  проигнорировать. А также рекламные сообщения, которые
-                  размещены не только снаружи, но внутри магазинов и торговых
-                  площадок.
-                </p>
+                <p>{t("bDirections.itDesc2")}</p>
               </div>
               <div className="right_box">
                 <div className="for_img">
@@ -86,24 +66,15 @@ function Advertising() {
                 </div>
               </div>
               <div className="right_box">
-                <p>
-                  Внешняя реклама – это рекламные сообщения, которые размещены
-                  на внешних поверхностях зданий и транспортов. К таким видам
-                  реклам относятся: текстовые, графические, либо любые другие
-                  описания товаров и услуг. К наружной рекламе относят звуковую
-                  рекламу, и это единственный вид, который нельзя
-                  проигнорировать. А также рекламные сообщения, которые
-                  размещены не только снаружи, но внутри магазинов и торговых
-                  площадок.
-                </p>
+                <p>{t("bDirections.itDesc3")}</p>
               </div>
             </div>
           </div>
         </div>
         <div className="link_all4u pb-5 light_dark">
           <div className="wrapper">
-            <a href="https://all4u.market" className="border_g">
-              Заказать услугу
+            <a href="tel: +998 71 230 38 83" className="border_g">
+              {t("bDirections.eOrder")}
             </a>
           </div>
         </div>

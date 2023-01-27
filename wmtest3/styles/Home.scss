@@ -7,12 +7,13 @@
         width: 100%;
         height: 100vh;
         object-fit: cover;
+        display: none;
       }
     }
     .content {
       z-index: 1;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.493);
+      background-color: rgba(0, 0, 0, 0.13);
       width: 100%;
       height: 100vh;
       display: flex;
@@ -63,7 +64,7 @@
   }
 }
 .Advantages {
-  background-color: #333333;
+  background-color: transparent;
   .wrapper {
     @media (max-width: 768px) {
       display: block;
@@ -79,8 +80,8 @@
       display: flex;
       justify-content: space-around;
       padding: 30px;
-      background: #232323;
-      border: 1px solid transparent;
+      background: transparent;
+      border: 1px solid #232323;
       &:hover {
         background-color: transparent;
         border: 1px solid #232323;
@@ -281,7 +282,7 @@
   }
 }
 .HomeNews {
-  background: #333333;
+  background: transparent;
   padding: 70px 0;
   .wrapper {
     .mycol {

@@ -8,8 +8,13 @@
       .mycol {
         width: 95%;
         text-align: center;
+        margin: 20px 0;
         h2 {
           padding: 10px 0;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         img {
           width: 100%;

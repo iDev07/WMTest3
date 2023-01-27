@@ -7,6 +7,7 @@ import Advantages from "../components/Home/Advantages";
 import Directions from "../components/Home/Directions";
 import HomeNews from "../components/Home/HomeNews";
 import Partners from "../components/Home/Partners";
+import Particles from "../components/Particles";
 export default function Home() {
   const { t } = useTranslation();
   return (
@@ -18,7 +19,9 @@ export default function Home() {
         <link rel="icon" href="new_logo.svg" />
       </Head>
       <main className="main">
+        <Particles />
         <Introduction />
+
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}

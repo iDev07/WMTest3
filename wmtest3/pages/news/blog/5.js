@@ -6,15 +6,15 @@ function MainSingle() {
   return (
     <>
       <Head>
-        <title>{t("news.news1")}</title>
+        <title>{t("newsPage.news5")}</title>
       </Head>
       <div className="MainSingle">
         <div className="wrapper">
           <div className="container">
             <div className="content">
-              <h2>{t("news.news1")}</h2>
-              <img src="../../images/news/news1.webp" alt="img" />
-              <p>{t("news.fullNews1")}</p>
+              <h2>{t("newsPage.news5")}</h2>
+              <img src="../../images/news/news5.jpg" alt="img" />
+              <p>{t("newsPage.fullNews5")}</p>
             </div>
           </div>
         </div>

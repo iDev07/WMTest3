@@ -74,7 +74,7 @@
       }
       display: grid;
       grid-template-columns: 45% 55%;
-      align-items: center;
+      // align-items: center;
       max-width: 80%;
       margin: 0 auto;
       padding-bottom: 50px;
@@ -91,12 +91,18 @@
       }
       .left_box {
         margin-right: 40px;
+        align-items: center;
         p {
           font-size: 20px;
           line-height: 170%;
           /* or 34px */
           text-align: right;
           color: #ffffff;
+        }
+        height: 2px;
+        h2 {
+          text-align: right;
+          margin: 20px 0;
         }
       }
     }

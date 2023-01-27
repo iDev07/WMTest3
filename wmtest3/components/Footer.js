@@ -159,7 +159,7 @@ function Footer() {
               </li>
               <li>
                 <EmailOutlinedIcon />
-                info@example.com
+                worldmiral@mail.ru
               </li>
               <li>
                 <AccessTimeOutlinedIcon />

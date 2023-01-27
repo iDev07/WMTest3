@@ -114,7 +114,10 @@ h2 {
   }
 }
 .Heading_pages {
-  background: #242424;
+  // background: #242424;
+  background: transparent;
+
+  backdrop-filter: blur(10px);
   .wrapper {
     @media (max-width: 768px) {
       height: 130px;
@@ -125,7 +128,10 @@ h2 {
         width: 90% !important;
       }
     }
-    background: #242424;
+    // background: #242424;
+    background: transparent;
+    border-top: 1px solid rgba(182, 182, 182, 0.575);
+    border-bottom: 1px solid rgba(182, 182, 182, 0.575);
     height: 170px;
     position: relative;
     display: flex;

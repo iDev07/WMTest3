@@ -22,9 +22,7 @@ function Export() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">
-                  предоставляем качественный сервис для <span>экспорта</span>
-                </h1>
+                <h1 className="heading">{t("bDirections.eIntro")}</h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>
@@ -42,21 +40,10 @@ function Export() {
             </div>
           </div>
         </div>
-        <LineHeading name_section={"о нас"} />
+        <LineHeading name_section={t("bDirections.eHeading1")} />
         <div className="somecontent light_dark">
           <div className="containerdev">
-            <p className="uni_p">
-              Группа компаний World Miral стремится доставлять обширный выбор
-              качественных продуктов и товаров на территорию СНГ и Европы. В
-              компании успешно работают специалисты с опытом в сфере экспорта на
-              протяжении более 10 лет а сама компания начала экспортировать
-              товары с 2019 года и успешно продолжается по сей день. С каждым
-              годом количество доставляемых товаров и география экспорта
-              увеличивается, действия компании расширяются и открываются новые
-              горизонты возможностей. Новым этапом наших возможностей стало
-              создание международной экспортно-импортной оптово-розничной
-              платформы под брендом all4u.market.
-            </p>
+            <p className="uni_p">{t("bDirections.eSmallAbout")}</p>
           </div>
         </div>
         <div className="results_numbers light_dark">
@@ -70,7 +57,7 @@ function Export() {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-                <p>Companies</p>
+                <p>{t("bDirections.eNum1")}</p>
               </div>
             </div>
             <div className="mycol">
@@ -82,7 +69,7 @@ function Export() {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-                <p>Companies</p>
+                <p>{t("bDirections.eNum2")}</p>
               </div>
             </div>
             <div className="mycol">
@@ -94,7 +81,7 @@ function Export() {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-                <p>Companies</p>
+                <p>{t("bDirections.eNum3")}</p>
               </div>
             </div>
           </div>
@@ -103,34 +90,15 @@ function Export() {
           <div className="containerdev">
             <div className="grid-5">
               <div className="right_box mr-3">
-                <p className="dark">
-                  ALL4U.MARKET - первая универсальная онлайн-платформа, которая
-                  позволяет экспортёрам и импортёрам покупать лучший продукт по
-                  лучшей цене на международном рынке. Маркетплейс – это
-                  оптимизированная торговая площадка для электронной коммерции с
-                  готовым набором опций. На начальном этапе построения бизнеса
-                  по продаже товаров маркетплейс практически незаменим. С
-                  помощью такой торговой площадки проще всего наработать базу
-                  лояльных клиентов.
-                </p>
+                <p className="dark">{t("bDirections.eLeft")}</p>
               </div>
               <div className="left_box ml-3">
-                <p className="dark">
-                  ALL IN - Быстрорастущий производитель и поставщик в Средней
-                  Азии. Компания занимается сбором и сортировкой овощей, зелени,
-                  салатов, фруктов и бобовых культур, и производством сушенной
-                  продукцией в Средней Азии. Является одним из лучших
-                  представителей в области сбора, сортировки, упаковки, хранения
-                  и транспортировки продукции. Склады хранения плодоовощной
-                  продукции, расположенные в Ташкентской, Самаркандской,
-                  Сурхандарьинской областях, а так же в Ферганской долине
-                  площадью более 10000 кв.м.
-                </p>
+                <p className="dark">{t("bDirections.eRight")}</p>
               </div>
             </div>
           </div>
         </div>
-        <LineHeading name_section={"партнёры"} />
+        <LineHeading name_section={t("partners.intro")} />
         <div className="Exportpartners">
           <div className="wrapper">
             <Swiper
@@ -239,8 +207,8 @@ function Export() {
         </div>
         <div className="link_all4u pb-5 light_dark">
           <div className="wrapper">
-            <a href="https://all4u.market" className="border_g">
-              Заказать услугу
+            <a href="tel: +998 71 230 38 83" className="border_g">
+              {t("bDirections.eOrder")}
             </a>
           </div>
         </div>

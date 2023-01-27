@@ -2,11 +2,14 @@ import React from "react";
 import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
-function News(props) {
+import { useTranslation } from "react-i18next";
+function News() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
-        <title>All News</title>
+        <title>{t("newsPage.intro")}</title>
+        <link href="../../new_logo.svg" rel="icon " />
       </Head>
       <div className="News">
         <div className="main_back wrapper">
@@ -14,8 +17,8 @@ function News(props) {
             <div className="inner_wrap">
               <div className="with_anime">
                 <h1 className="heading">
-                  <span>Новости</span>
-                  <p>от World Miral Group</p>
+                  <span>{t("newsPage.intro")}</span>
+                  <p>{t("newsPage.companyNews")}</p>
                 </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
@@ -38,63 +41,51 @@ function News(props) {
           <div className="containerdev">
             <div className="wrapper grid-3">
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/1">
                   <div className="top_img">
                     <img src="../images/news/news1.webp" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("news.news1")}</h2>
                 </Link>
               </div>
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/2">
                   <div className="top_img">
-                    <img src="../images/news/news1.png" />
+                    <img src="../images/news/news2.png" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("newsPage.news2")}</h2>
                 </Link>
               </div>
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/3">
                   <div className="top_img">
-                    <img src="../images/news/news1.png" />
+                    <img src="../images/news/news3.jpg" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("newsPage.news3")}</h2>
                 </Link>
               </div>
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/4">
                   <div className="top_img">
-                    <img src="../images/news/news1.png" />
+                    <img src="../images/news/news4.png" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("newsPage.news4")}</h2>
                 </Link>
               </div>
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/5">
                   <div className="top_img">
-                    <img src="../images/news/news1.png" />
+                    <img src="../images/news/news5.jpg" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("newsPage.news5")}</h2>
                 </Link>
               </div>
               <div className="mycol">
-                <Link href="/news/">
+                <Link href="/news/blog/6">
                   <div className="top_img">
-                    <img src="../images/news/news1.png" />
+                    <img src="../images/news/news6.jpg" />
                   </div>
-                  <h2>
-                    Обсуждены вопросы развития и перспективы мебельной отрасли
-                  </h2>
+                  <h2>{t("newsPage.news6")}</h2>
                 </Link>
               </div>
             </div>
