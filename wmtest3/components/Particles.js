@@ -26,7 +26,7 @@ const Animation = () => {
             value: "#000000",
           },
         },
-        fpsLimit: 90,
+        fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
@@ -44,7 +44,7 @@ const Animation = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -61,7 +61,7 @@ const Animation = () => {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             directions: "none",

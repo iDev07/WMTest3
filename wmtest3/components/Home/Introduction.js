@@ -7,9 +7,9 @@ function Introduction() {
   return (
     <div className="Introduction">
       <div className="wrapper">
-        <div className="back_video">
+        {/* <div className="back_video">
           <video src="main_back.mp4" autoPlay loop muted />
-        </div>
+        </div> */}
         <div className="content">
           <div className="main containerdev">
             <h1 className="heading">
