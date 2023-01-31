@@ -101,7 +101,6 @@ function Partners() {
                 </a>
               </div>
             </SwiperSlide>
-
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://candy-gold.uz/ru/">
@@ -122,7 +121,6 @@ function Partners() {
                 </a>
               </div>
             </SwiperSlide>
-
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://tst-g.uz/">
@@ -143,7 +141,6 @@ function Partners() {
                 </a>
               </div>
             </SwiperSlide>
-
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://wangdagroup.uz/">

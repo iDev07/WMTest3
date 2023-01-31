@@ -4,23 +4,16 @@ export default function Document() {
   return (
     <Html lang="ru" translate="no">
       <Head>
-        {/* <link
-          href="https://fonts.cdnfonts.com/css/sf-pro-display"
-          rel="stylesheet"
-        /> */}
-
         <meta
           name="description"
           content="Группа компаний World Miral – крупная компания с многолетним опытом работы в Узбекистане. В нашу компанию входят предприятия и фирмы, специализирующиеся на производстве, экспорте, консалтинге и импорте."
         />
         <link rel="icon" href="new_logo.svg" />
         <meta name="author" content="iDev07" />
-
         <meta
           name="keywords"
           content="WORLDMIRAL, Worldmiral, World Miral group, World Miral company, World Miral uz"
         />
-
         <meta property="og:title" content="World Miral Grpup" />
         <meta
           property="og:description"
@@ -48,6 +41,23 @@ export default function Document() {
         <meta
           name="msapplication-TileImage"
           content="http://worldmiral.com/static/media/logo.cc6b24336917bd54a104484b70b8e4b4.svg"
+        />
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
         />
       </Head>
       <body>
