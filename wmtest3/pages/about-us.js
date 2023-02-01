@@ -3,6 +3,7 @@ import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function About() {
   const { t } = useTranslation();
   return (
@@ -15,7 +16,9 @@ function About() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">{t("aboutPage.intro")}</h1>
+                <h1 className="heading animate__animated animate__fadeInLeft ">
+                  {t("aboutPage.intro")}
+                </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>

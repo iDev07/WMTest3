@@ -79,6 +79,7 @@
       width: 100%;
       top: 70px;
       background-color: transparent;
+      backdrop-filter: blur(10px);
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
       li {
         width: 100%;

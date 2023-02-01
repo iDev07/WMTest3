@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function Introduction() {
   const { t } = useTranslation();
   return (
@@ -12,10 +13,12 @@ function Introduction() {
         </div> */}
         <div className="content">
           <div className="main containerdev">
-            <h1 className="heading">
+            <h1 className="heading animate__animated animate__zoomIn">
               <span>{t("homeMain.shortWord")}</span> {t("homeMain.mainText")}
             </h1>
-            <p className="short_about">{t("homeMain.mainDes1")}</p>
+            <p className="short_about animate__animated animate__zoomIn">
+              {t("homeMain.mainDes1")}
+            </p>
             <div className="border_g">
               <Link href="/about-us">{t("homeMain.moreRead")}</Link>
             </div>
