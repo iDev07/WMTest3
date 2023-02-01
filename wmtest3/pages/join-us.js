@@ -3,6 +3,7 @@ import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function JoinUs() {
   const { t } = useTranslation();
   return (
@@ -15,7 +16,7 @@ function JoinUs() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">
+                <h1 className="heading animate__animated animate__fadeInRight">
                   {t("aboutPage.carrerIntro")}
                   <p>{t("aboutPage.carrerDesc")}</p>
                 </h1>

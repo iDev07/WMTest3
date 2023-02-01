@@ -3,6 +3,18 @@
     background: url("../public/images/all4u_back.jpg");
     background-position: center center;
     background-size: cover;
+    overflow-y: hidden;
+    .heading {
+      @media (max-width: 768px) {
+        p {
+          max-width: 100% !important;
+        }
+      }
+      p {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
   }
   .results_numbers {
     padding-bottom: 50px;

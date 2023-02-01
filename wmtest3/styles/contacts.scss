@@ -1,7 +1,15 @@
 .Contacts {
   .main_back {
-    background: url("../public/images/c_back.png");
-    .heading {
+    background: url("../public/images/new_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @media (max-width: 768px) {
+      .heading {
+        max-width: 100% !important;
+      }
+    }
+    .wrapper .heading {
       p {
         max-width: 70%;
         margin: 20px auto;
@@ -16,6 +24,7 @@
       }
       padding: 0 20px;
       font-size: 25px;
+      color: #5e9cfa;
     }
   }
 }

@@ -17,7 +17,7 @@ function News() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading animate__animated animate__slideInUp">
+                <h1 className="heading">
                   <span>{t("newsPage.intro")}</span>
                   <p>{t("newsPage.companyNews")}</p>
                 </h1>

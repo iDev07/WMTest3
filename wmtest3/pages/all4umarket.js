@@ -6,6 +6,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function All4uMarket() {
   const { t } = useTranslation();
   return (
@@ -18,7 +19,7 @@ function All4uMarket() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">
+                <h1 className="heading animate__animated animate__fadeInBottomRight">
                   {t("bDirections.mIntro")}
                   <p className="exists_p">{t("bDirections.mShortIntro")}</p>
                 </h1>

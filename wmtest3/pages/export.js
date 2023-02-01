@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
+import "animate.css";
 function Export() {
   const { t } = useTranslation();
   return (
@@ -22,7 +23,9 @@ function Export() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">{t("bDirections.eIntro")}</h1>
+                <h1 className="heading animate__animated animate__lightSpeedInLeft">
+                  {t("bDirections.eIntro")}
+                </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function ITservices() {
   const { t } = useTranslation();
   return (
@@ -15,7 +16,9 @@ function ITservices() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">{t("bDirections.proIntro")}</h1>
+                <h1 className="heading animate__animated animate__bounceInUp">
+                  {t("bDirections.proIntro")}
+                </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>

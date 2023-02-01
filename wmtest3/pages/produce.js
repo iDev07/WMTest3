@@ -4,6 +4,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineHeading } from "../components/LineHeading";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 function produce() {
   const { t } = useTranslation();
   return (
@@ -16,7 +17,9 @@ function produce() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">{t("bDirections.pIntroOrigin")}</h1>
+                <h1 className="heading animate__animated animate__flipInX">
+                  {t("bDirections.pIntroOrigin")}
+                </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>

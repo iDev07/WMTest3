@@ -6,6 +6,7 @@ import { LineHeading } from "../components/LineHeading";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTranslation } from "react-i18next";
 import { Member } from "../utils/helpers";
+import "animate.css";
 function TeamMembers() {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
@@ -27,7 +28,9 @@ function TeamMembers() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading">{t("aboutPage.teamIntro")}</h1>
+                <h1 className="heading animate__animated animate__backInDown">
+                  {t("aboutPage.teamIntro")}
+                </h1>
                 <div className="wrapper_animation">
                   <div className="down_animation">
                     <div>

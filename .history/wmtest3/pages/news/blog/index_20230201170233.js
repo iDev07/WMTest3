@@ -3,7 +3,7 @@ import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import "animate.css";
+
 function News() {
   const { t } = useTranslation();
   return (
@@ -17,7 +17,7 @@ function News() {
           <div className="containerdev">
             <div className="inner_wrap">
               <div className="with_anime">
-                <h1 className="heading animate__animated animate__slideInUp">
+                <h1 className="heading">
                   <span>{t("newsPage.intro")}</span>
                   <p>{t("newsPage.companyNews")}</p>
                 </h1>
