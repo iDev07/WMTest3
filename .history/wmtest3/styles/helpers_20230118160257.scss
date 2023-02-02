@@ -50,9 +50,6 @@
   }
 }
 .ant-modal-content {
-  @media (max-width: 768px) {
-    margin-bottom: 50px;
-  }
   background: #232323 !important;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25) !important;
   border-radius: 0 !important;
@@ -71,9 +68,6 @@
     display: grid;
     grid-template-columns: 35% 65%;
     .left_about {
-      @media (max-width: 768px) {
-        margin-top: 100px;
-      }
       text-align: center;
       .for_img_worker {
         background-color: #171717;
@@ -95,9 +89,6 @@
     .right_about {
       margin-left: 50px;
       p {
-        @media (max-width: 768px) {
-          font-size: 14px;
-        }
         color: #fff;
         font-size: 18px;
       }

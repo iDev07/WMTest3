@@ -11,24 +11,6 @@
   }
   .ads_services {
     .wrapper_ads {
-      @media (max-width: 992px) {
-        display: block;
-        max-width: 100%;
-        .left_box {
-          height: 260px !important;
-        }
-        .for_img {
-          padding: 0;
-          img {
-            padding: 20px !important;
-            max-width: 100%;
-          }
-        }
-        .right_box {
-          margin-left: 0 !important;
-          margin-top: 15px;
-        }
-      }
       max-width: 80%;
       margin: 0 auto;
       display: grid;
@@ -59,28 +41,6 @@
       }
     }
     .wrapper_ads_reverse {
-      @media (max-width: 992px) {
-        display: block;
-        max-width: 100%;
-        .for_img {
-          padding: 50px !important;
-          padding-top: 20px !important;
-        }
-        .left_box {
-          margin-right: 0 !important;
-          margin-bottom: 15px;
-          text-align: left;
-          p {
-            text-align: left !important;
-          }
-          h2 {
-            text-align: left !important;
-          }
-        }
-        .right_box {
-          height: 260px !important;
-        }
-      }
       display: grid;
       grid-template-columns: 45% 55%;
       align-items: center;
@@ -94,9 +54,6 @@
           text-align: center;
           background-color: #242424;
           img {
-            @media (max-width: 768px) {
-              max-width: 100%;
-            }
             padding: 30px;
           }
         }
@@ -115,9 +72,6 @@
     .wrapper_ads {
       .custom {
         .for_img {
-          @media (max-width: 768px) {
-            height: 260px !important;
-          }
           display: flex;
           justify-content: center;
           align-items: center;

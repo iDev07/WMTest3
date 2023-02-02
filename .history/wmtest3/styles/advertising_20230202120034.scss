@@ -20,7 +20,7 @@
         .for_img {
           padding: 0;
           img {
-            padding: 20px !important;
+            padding: 0;
             max-width: 100%;
           }
         }
@@ -94,9 +94,6 @@
           text-align: center;
           background-color: #242424;
           img {
-            @media (max-width: 768px) {
-              max-width: 100%;
-            }
             padding: 30px;
           }
         }
@@ -115,9 +112,6 @@
     .wrapper_ads {
       .custom {
         .for_img {
-          @media (max-width: 768px) {
-            height: 260px !important;
-          }
           display: flex;
           justify-content: center;
           align-items: center;

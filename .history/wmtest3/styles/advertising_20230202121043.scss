@@ -95,7 +95,7 @@
           background-color: #242424;
           img {
             @media (max-width: 768px) {
-              max-width: 100%;
+              max-width: 100$;
             }
             padding: 30px;
           }
