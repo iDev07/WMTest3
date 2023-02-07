@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #333333;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: initial;
+  touch-action: none !important;
+}
+p {
+  margin-bottom: 0 !important;
+}
+ul {
+  margin-bottom: 0 !important;
+}
+h2 {
+  margin-bottom: 0;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+.containerdev {
+  position: relative !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .containerdev {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .containerdev {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerdev {
+    width: 1300px;
+  }
+}
+.heading {
+  @media (max-width: 768px) {
+    font-size: 27px;
+    margin-top: 100px;
+    p {
+      font-size: 12px !important;
+    }
+  }
+  font-size: 50px;
+  line-height: 170%;
+  font-weight: 800;
+  margin: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 130px;
+  span {
+    color: #46689c;
+  }
+}
+.short_about {
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  font-size: 17px;
+  line-height: 170%;
+  color: #fff;
+  font-weight: 600;
+}
+.border_g {
+  @media (max-width: 768px) {
+    padding: 4px;
+    font-size: 12px;
+  }
+  border: 3px solid #46689c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #46689c;
+    color: #fff;
+  }
+}
+.Heading_pages {
+  // background: #242424;
+  background: transparent;
+
+  backdrop-filter: blur(10px);
+  .wrapper {
+    @media (max-width: 768px) {
+      height: 130px;
+      .number {
+        top: -32% !important;
+      }
+      h1 {
+        width: 90% !important;
+      }
+    }
+    // background: #242424;
+    background: transparent;
+    border-top: 1px solid rgba(182, 182, 182, 0.575);
+    border-bottom: 1px solid rgba(182, 182, 182, 0.575);
+    height: 170px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .containerdev {
+      position: relative;
+    }
+    .number {
+      position: absolute;
+      z-index: 1;
+      top: -100%;
+      margin: 0;
+
+      p {
+        font-size: 130px;
+        // top: 50%;
+        font-weight: 1000;
+        color: #333333;
+        z-index: 1;
+      }
+    }
+    .content {
+      align-items: center;
+      position: relative;
+      display: flex;
+      // padding-top: 40px;
+      z-index: 10;
+      h1 {
+        color: #46689c;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Main backgroud images styles
+.main_back {
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  .inner_wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .with_anime {
+    align-items: center;
+    display: flex;
+    .down_animation {
+      @media (max-width: 768px) {
+        left: 45%;
+      }
+      position: absolute;
+      bottom: 0;
+      left: 49%;
+    }
+  }
+  h1 {
+    max-width: 90%;
+    margin: 0 auto;
+    p {
+      font-size: 17px;
+      line-height: initial;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Animations //////////////
+.main_back {
+  .down_animation {
+    svg {
+      font-size: 40px;
+      height: 1em;
+      font-weight: 800;
+    }
+    .first {
+      transition: 0.3s ease;
+      animation-name: first_icon;
+      animation-duration: 1s;
+      animation-delay: 0ms;
+      animation-iteration-count: infinite;
+    }
+    .second {
+      animation-name: second_icon;
+      animation-duration: 1s;
+      animation-delay: 0ms;
+      animation-iteration-count: infinite;
+    }
+    .third {
+      transition: 0.3s ease;
+      animation-name: third_icon;
+      animation-duration: 1s;
+      animation-delay: 0ms;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+// Heading with lines
+
+.Line_heading {
+  width: 100%;
+  height: 170px;
+  background: #242424;
+  .wrapper {
+    position: relative;
+    display: flex;
+    height: 170px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    &::after,
+    &::before {
+      @media (max-width: 768px) {
+        width: 20% !important;
+      }
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #333333;
+      width: 35%;
+    }
+    &::after {
+      margin-left: auto;
+    }
+    &::before {
+      margin-right: auto;
+    }
+    .parent {
+      h3 {
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+        text-transform: uppercase;
+        color: #46689c;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Simple Texts
+
+.simple_text {
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  /* or 34px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+// Unique some texts
+.uni_p {
+  padding: 50px 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+//  Colors
+.light_dark {
+  background-color: #333333;
+}
+// Margin and Padding
+.ml-auto {
+  margin-left: auto;
+}
+
+.p-5 {
+  padding: 50px 0;
+}
+.pb-5 {
+  padding-bottom: 50px;
+}
+
+.t_center {
+  text-align: center;
+}
+
+.link_all4u {
+  .wrapper {
+    text-align: center;
+  }
+  .border_g {
+    display: initial;
+  }
+}
+.mr-3 {
+  margin-right: 10px;
+}
+.ml-3 {
+  margin-left: 10px;
+}
+.dark {
+  background-color: #242424;
+}
+.grid-5 {
+  @media (max-width: 992px) {
+    display: block;
+    div {
+      height: auto !important;
+      margin-left: 0;
+      width: 100%;
+      margin: 30px 0;
+    }
+  }
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid-3 {
+  @media (max-width: 768px) {
+    display: block;
+    div {
+      width: 100% !important;
+      margin: 30px 0;
+    }
+  }
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+// backToTopButton
+.backToTopButton {
+  &:hover {
+    cursor: pointer;
+  }
+}

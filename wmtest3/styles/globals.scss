@@ -175,6 +175,7 @@ h2 {
   width: 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  background-attachment: fixed !important;
   .inner_wrap {
     height: 100vh;
     display: flex;

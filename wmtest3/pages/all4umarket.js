@@ -7,6 +7,7 @@ import CountUp from "react-countup";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import "animate.css";
+// import "../components/styles/all4umarket.scss";
 function All4uMarket() {
   const { t } = useTranslation();
   return (
@@ -181,7 +182,7 @@ function All4uMarket() {
         </div>
         <div className="link_all4u p-5 light_dark">
           <div className="wrapper">
-            <a href="https://all4u.market" className="border_g">
+            <a href="/frasnhize.pdf" className="border_g">
               {t("bDirections.goAll4u")}
             </a>
           </div>

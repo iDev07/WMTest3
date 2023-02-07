@@ -19,7 +19,6 @@ import "../styles/bootstrap.min.css";
 import "../styles/MobileNav.scss";
 import "../styles/Footer.scss";
 import "../styles/loading.scss";
-import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import MainLoader from "../components/MainLoader";
 import NextNProgress from "nextjs-progressbar";
@@ -32,7 +31,6 @@ export default function App({ Component, pageProps }) {
   });
   return (
     <>
-      {/* <Loading /> */}
       {loading === true ? (
         <MainLoader />
       ) : (
