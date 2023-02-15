@@ -9,9 +9,8 @@ import HomeNews from "../components/Home/HomeNews";
 import Partners from "../components/Home/Partners";
 import Particles from "../components/Particles";
 import { getPosts } from "../services";
-export default function Home({ posts }) {
+export default function Home() {
   const { t } = useTranslation();
-  console.log(posts);
   return (
     <>
       <Head>

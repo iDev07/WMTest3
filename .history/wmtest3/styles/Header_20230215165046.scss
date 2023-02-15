@@ -70,18 +70,6 @@
           }
         }
       }
-      .div_called_li {
-        list-style-type: none;
-        margin-right: 30px;
-        position: relative;
-        padding: 30px 0;
-        &:hover {
-          .hidden_links_one {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
     }
     .hidden_links_one {
       opacity: 0;

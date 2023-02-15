@@ -48,7 +48,7 @@ function Header() {
                   </li>
                 </div>
               </div>
-              <div className="div_called_li">
+              <li>
                 <Link href="/produce">{t("menu.main3")}</Link>
                 <div className="hidden_links_one">
                   <li>
@@ -67,17 +67,17 @@ function Header() {
                     <Link href="/consalting">{t("submenus.direct5")}</Link>
                   </li>
                 </div>
-              </div>
-              <div className="div_called_li">
+              </li>
+              <li>
                 <Link href="/all4umarket">ALL4U Market</Link>
-              </div>
-              <div className="div_called_li">
+              </li>
+              <li>
                 <Link href="/news/blog">{t("menu.main4")}</Link>
-              </div>
-              <div className="div_called_li">
+              </li>
+              <li>
                 <Link href="/contacts">{t("menu.main5")}</Link>
-              </div>
-              <div className="div_called_li">
+              </li>
+              <li>
                 <select name="lang" value={lang} onChange={handleChange}>
                   <option
                     style={{
@@ -104,7 +104,7 @@ function Header() {
                     EN
                   </option>
                 </select>
-              </div>
+              </li>
             </ul>
           </div>
         </div>

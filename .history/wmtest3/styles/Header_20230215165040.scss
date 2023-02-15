@@ -58,19 +58,7 @@
       display: flex;
       width: 100%;
       position: relative;
-      li {
-        list-style-type: none;
-        margin-right: 30px;
-        position: relative;
-        padding: 30px 0;
-        &:hover {
-          .hidden_links_one {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-      .div_called_li {
+      div {
         list-style-type: none;
         margin-right: 30px;
         position: relative;
