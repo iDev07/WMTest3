@@ -84,7 +84,7 @@ export const MainNewsPart = ({ post }) => {
   const { i18n } = useTranslation();
   return (
     <div className="mycol">
-      <Link href={`/news/blog/${post.slug_news}`}>
+      <Link href={post.slug_news}>
         <div className="top_img">
           <img src={post.image_news.url} />
         </div>

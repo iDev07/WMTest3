@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
-import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -51,51 +49,6 @@ export const Member = ({ img, about, fio, position }) => {
   );
 };
 
-export const HomeNewsPiece = ({ post }) => {
-  const { t } = useTranslation();
-  const { i18n } = useTranslation();
+export const HomeNewsPiece = ({image, heading}) = {
 
-  return (
-    // <SwiperSlide>
-    <div className="mycol">
-      <Link href={post.slug_news}>
-        <div className="wrapper_slider">
-          <div className="image_parent">
-            <div className="hover_effect">
-              <p>{t("directions.more")}</p>
-            </div>
-            <img src={post.image_news.url} />
-          </div>
-          <h2>
-            {i18n.language === "uz"
-              ? post.heading_uz
-              : i18n.language === "ru"
-              ? post.heading_ru
-              : post.heading_en}
-          </h2>
-        </div>
-      </Link>
-    </div>
-    // </SwiperSlide>
-  );
-};
-
-export const MainNewsPart = ({ post }) => {
-  const { i18n } = useTranslation();
-  return (
-    <div className="mycol">
-      <Link href={`/news/blog/${post.slug_news}`}>
-        <div className="top_img">
-          <img src={post.image_news.url} />
-        </div>
-        <h2>
-          {i18n.language === "uz"
-            ? post.heading_uz
-            : i18n.language === "ru"
-            ? post.heading_ru
-            : post.heading_en}
-        </h2>
-      </Link>
-    </div>
-  );
-};
+}

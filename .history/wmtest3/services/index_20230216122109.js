@@ -16,8 +16,6 @@ export const getPosts = async () => {
               url
             }
             slug_news
-            heading_en
-            heading_ru
           }
         }
       }
@@ -26,5 +24,5 @@ export const getPosts = async () => {
 
   const result = await request(graphqlAPI, query);
 
-  return result.newsConnection.edges;
+  return result.newsConnection.edges.node;
 };

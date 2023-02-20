@@ -3,10 +3,8 @@ import Head from "next/head";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { getPosts } from "../../../services";
-import { MainNewsPart } from "../../../utils/helpers";
 import "animate.css";
-export default function News({ posts }) {
+function News({ posts }) {
   const { t } = useTranslation();
   console.log(posts);
   return (
@@ -44,10 +42,15 @@ export default function News({ posts }) {
         <div className="main_news p-5 light_dark">
           <div className="containerdev">
             <div className="wrapper grid-3">
-              {posts.map((post, index) => (
-                <MainNewsPart key={index} post={post.node} />
-              ))}
-              {/* <div className="mycol">
+              <div className="mycol">
+                <Link href="/news/blog/1">
+                  <div className="top_img">
+                    <img src="../images/news/news1.webp" />
+                  </div>
+                  <h2>{t("news.news1")}</h2>
+                </Link>
+              </div>
+              <div className="mycol">
                 <Link href="/news/blog/2">
                   <div className="top_img">
                     <img src="../images/news/news2.png" />
@@ -86,7 +89,7 @@ export default function News({ posts }) {
                   </div>
                   <h2>{t("newsPage.news6")}</h2>
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -95,10 +98,5 @@ export default function News({ posts }) {
   );
 }
 
+export default News;
 // How to send props around components in REact js?
-export async function getStaticProps() {
-  const posts = (await getPosts()) || [];
-  return {
-    props: { posts },
-  };
-}

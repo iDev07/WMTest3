@@ -16,8 +16,6 @@ export const getPosts = async () => {
               url
             }
             slug_news
-            heading_en
-            heading_ru
           }
         }
       }

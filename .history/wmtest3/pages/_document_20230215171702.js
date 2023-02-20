@@ -2,7 +2,8 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html translate="no">
+    // <Html translate="no">
+    <>
       <Head>
         <meta
           name="description"
@@ -52,6 +53,7 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
-    </Html>
+    </>
+    // </Html>
   );
 }

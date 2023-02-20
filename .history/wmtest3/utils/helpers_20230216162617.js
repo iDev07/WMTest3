@@ -79,23 +79,3 @@ export const HomeNewsPiece = ({ post }) => {
     // </SwiperSlide>
   );
 };
-
-export const MainNewsPart = ({ post }) => {
-  const { i18n } = useTranslation();
-  return (
-    <div className="mycol">
-      <Link href={`/news/blog/${post.slug_news}`}>
-        <div className="top_img">
-          <img src={post.image_news.url} />
-        </div>
-        <h2>
-          {i18n.language === "uz"
-            ? post.heading_uz
-            : i18n.language === "ru"
-            ? post.heading_ru
-            : post.heading_en}
-        </h2>
-      </Link>
-    </div>
-  );
-};

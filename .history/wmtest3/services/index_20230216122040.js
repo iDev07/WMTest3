@@ -10,14 +10,12 @@ export const getPosts = async () => {
           node {
             created_date
             description_uz
-            heading_uz
+            headingUz
             id
             image_news {
               url
             }
             slug_news
-            heading_en
-            heading_ru
           }
         }
       }
@@ -26,5 +24,5 @@ export const getPosts = async () => {
 
   const result = await request(graphqlAPI, query);
 
-  return result.newsConnection.edges;
+  return result.newsConnection.edges.node;
 };

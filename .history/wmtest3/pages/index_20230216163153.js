@@ -31,6 +31,7 @@ export default function Home({ posts }) {
       <main className="main">
         <Particles />
         <Introduction />
+
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
@@ -51,6 +52,8 @@ export default function Home({ posts }) {
           link={"/news/blog"}
           number={"03"}
         />
+
+        {/* <HomeNews /> */}
         <div className="HomeNews">
           <div className="containerdev">
             <div className="wrapper">

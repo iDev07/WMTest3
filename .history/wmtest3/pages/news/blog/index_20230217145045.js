@@ -4,7 +4,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { getPosts } from "../../../services";
-import { MainNewsPart } from "../../../utils/helpers";
 import "animate.css";
 export default function News({ posts }) {
   const { t } = useTranslation();
@@ -44,8 +43,15 @@ export default function News({ posts }) {
         <div className="main_news p-5 light_dark">
           <div className="containerdev">
             <div className="wrapper grid-3">
-              {posts.map((post, index) => (
-                <MainNewsPart key={index} post={post.node} />
+              {posts.map((key, index) => (
+                <div className="mycol">
+                  <Link href={posts.node.slug_news}>
+                    <div className="top_img">
+                      <img src={posts.node.image_news.url} />
+                    </div>
+                    <h2>{t("news.news1")}</h2>
+                  </Link>
+                </div>
               ))}
               {/* <div className="mycol">
                 <Link href="/news/blog/2">

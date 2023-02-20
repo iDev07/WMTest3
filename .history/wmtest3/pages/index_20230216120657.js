@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import { Heading } from "../components/Heading";
 import { useTranslation } from "react-i18next";
 import Introduction from "../components/Home/Introduction";
@@ -9,14 +8,7 @@ import Directions from "../components/Home/Directions";
 import HomeNews from "../components/Home/HomeNews";
 import Partners from "../components/Home/Partners";
 import Particles from "../components/Particles";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper";
-import { HomeNewsPiece } from "../utils/helpers";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { getPosts } from "../services";
-
 export default function Home({ posts }) {
   const { t } = useTranslation();
   console.log(posts);
@@ -31,6 +23,7 @@ export default function Home({ posts }) {
       <main className="main">
         <Particles />
         <Introduction />
+
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
@@ -51,50 +44,7 @@ export default function Home({ posts }) {
           link={"/news/blog"}
           number={"03"}
         />
-        <div className="HomeNews">
-          <div className="containerdev">
-            <div className="wrapper">
-              <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
-                slidesPerGroup={1}
-                loop={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                loopFillGroupWithBlank={true}
-                breakpoints={{
-                  "@0.00": {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                  },
-                  "@0.75": {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  "@1.00": {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                  },
-                  "@1.50": {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
-              >
-                {posts.map((post, index) => (
-                  <SwiperSlide>
-                    <HomeNewsPiece key={index} post={post.node} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </div>
-        </div>
+        <HomeNews />
         <Heading
           name={t("partners.intro")}
           name_page={"посмотреть всё"}

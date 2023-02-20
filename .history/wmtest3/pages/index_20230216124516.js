@@ -16,7 +16,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { getPosts } from "../services";
-
 export default function Home({ posts }) {
   const { t } = useTranslation();
   console.log(posts);
@@ -31,6 +30,7 @@ export default function Home({ posts }) {
       <main className="main">
         <Particles />
         <Introduction />
+
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
@@ -51,6 +51,8 @@ export default function Home({ posts }) {
           link={"/news/blog"}
           number={"03"}
         />
+
+        {/* <HomeNews /> */}
         <div className="HomeNews">
           <div className="containerdev">
             <div className="wrapper">
@@ -87,9 +89,7 @@ export default function Home({ posts }) {
                 className="mySwiper"
               >
                 {posts.map((post, index) => (
-                  <SwiperSlide>
-                    <HomeNewsPiece key={index} post={post.node} />
-                  </SwiperSlide>
+                  <HomeNewsPiece key={index} post={post.node} />
                 ))}
               </Swiper>
             </div>
@@ -112,4 +112,82 @@ export async function getStaticProps() {
   return {
     props: { posts },
   };
+}
+
+{
+  /* <SwiperSlide>
+                  <div className="mycol">
+                    <Link href="/news/blog/2">
+                      <div className="wrapper_slider">
+                        <div className="image_parent">
+                          <div className="hover_effect">
+                            <p>{t("directions.more")}</p>
+                          </div>
+                          <img src="images/news/news2.png" />
+                        </div>
+                        <h2>{t("news.news2")}</h2>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="mycol">
+                    <Link href="/news/blog/3">
+                      <div className="wrapper_slider">
+                        <div className="image_parent">
+                          <div className="hover_effect">
+                            <p>{t("directions.more")}</p>
+                          </div>
+                          <img src="images/news/news3.jpg" />
+                        </div>
+                        <h2>{t("newsPage.news3")}</h2>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="mycol">
+                    <Link href="/news/blog/4">
+                      <div className="wrapper_slider">
+                        <div className="image_parent">
+                          <div className="hover_effect">
+                            <p>{t("directions.more")}</p>
+                          </div>
+                          <img src="images/news/news4.png" />
+                        </div>
+                        <h2>{t("newsPage.news4")}</h2>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="mycol">
+                    <Link href="/news/blog/5">
+                      <div className="wrapper_slider">
+                        <div className="image_parent">
+                          <div className="hover_effect">
+                            <p>{t("directions.more")}</p>
+                          </div>
+                          <img src="images/news/news5.jpg" />
+                        </div>
+                        <h2>{t("newsPage.news5")}</h2>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="mycol">
+                    <Link href="/news/blog/6">
+                      <div className="wrapper_slider">
+                        <div className="image_parent">
+                          <div className="hover_effect">
+                            <p>{t("directions.more")}</p>
+                          </div>
+                          <img src="images/news/news6.jpg" />
+                        </div>
+                        <h2>{t("newsPage.news6")}</h2>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide> */
 }
