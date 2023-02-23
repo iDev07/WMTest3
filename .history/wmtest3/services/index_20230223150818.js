@@ -8,6 +8,7 @@ export const getPosts = async () => {
       newsAPIConnection {
         edges {
           node {
+            createdAt
             created_date
             description_uz
             heading_en
@@ -30,13 +31,28 @@ export const getPosts = async () => {
 
 export const getPostDetails = async (slug) => {
   const query = gql`
-    query getPostDetails($slug: String!) {
-      getPostDetails(where: { slug: $slug }) {
-        slug
-        description_uz
-        title_uz
-        image {
+    query GetPostDetails($slug: String!) {
+      newsAPI(where: { slug: $slug }) {
+        title
+        excerpt
+        featuredImage {
           url
+        }
+        author {
+          name
+          bio
+          photo {
+            url
+          }
+        }
+        createdAt
+        slug
+        content {
+          raw
+        }
+        categories {
+          name
+          slug
         }
       }
     }

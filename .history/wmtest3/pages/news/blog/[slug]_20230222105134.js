@@ -11,7 +11,14 @@ export default function Slug({ post }) {
   return (
     <>
       <Head>
-        <title>Title this SLuh JavaScript</title>
+        <title>
+          {i18n.language === "uz"
+            ? post.heading_uz
+            : i18n.language === "ru"
+            ? post.heading_ru
+            : post.heading_en}
+          {post.slug}
+        </title>
       </Head>
     </>
   );
@@ -19,7 +26,7 @@ export default function Slug({ post }) {
 
 // Fetch data at build time
 export async function getStaticProps({ params }) {
-  const data = await getPostDetails(params.slug);
+  const data = await getPosts(params.slug);
   return {
     props: {
       post: data,

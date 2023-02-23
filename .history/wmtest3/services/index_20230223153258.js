@@ -30,10 +30,10 @@ export const getPosts = async () => {
 
 export const getPostDetails = async (slug) => {
   const query = gql`
-    query getPostDetails($slug: String!) {
-      getPostDetails(where: { slug: $slug }) {
-        slug
+    query getPostDetails {
+      getPostDetail {
         description_uz
+        slug
         title_uz
         image {
           url

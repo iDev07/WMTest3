@@ -8,6 +8,7 @@ export const getPosts = async () => {
       newsAPIConnection {
         edges {
           node {
+            createdAt
             created_date
             description_uz
             heading_en
@@ -30,19 +31,25 @@ export const getPosts = async () => {
 
 export const getPostDetails = async (slug) => {
   const query = gql`
-    query getPostDetails($slug: String!) {
-      getPostDetails(where: { slug: $slug }) {
-        slug
-        description_uz
-        title_uz
-        image {
-          url
+    query News {
+      newsAPIConnection {
+        edges {
+          node {
+            createdAt
+            created_date
+            description_uz
+            heading_en
+            heading_ru
+            heading_uz
+            slug
+            image_news {
+              url
+            }
+          }
         }
       }
     }
   `;
-
-  const result = await request(graphqlAPI, query, { slug });
-
-  return result.post;
+  const result = await request(graphqlAPI, query);
+  return result.edges;
 };
