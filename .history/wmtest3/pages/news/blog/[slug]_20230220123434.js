@@ -1,6 +1,5 @@
 import React from "react";
 import { getPosts } from "../../../services";
-import { getPostDetails } from "../../../services";
 import { useTranslation } from "react-i18next";
 import Head from "next/head";
 export default function Slug({ post }) {
@@ -20,6 +19,7 @@ export default function Slug({ post }) {
           {post.slug}
         </title>
       </Head>
+      <div></div>
     </>
   );
 }

@@ -1,13 +1,11 @@
 import React from "react";
 import { getPosts } from "../../../services";
-import { getPostDetails } from "../../../services";
 import { useTranslation } from "react-i18next";
 import Head from "next/head";
 export default function Slug({ post }) {
   console.log(post);
   const { t } = useTranslation();
   const { i18n } = useTranslation();
-
   return (
     <>
       <Head>
@@ -17,7 +15,6 @@ export default function Slug({ post }) {
             : i18n.language === "ru"
             ? post.heading_ru
             : post.heading_en}
-          {post.slug}
         </title>
       </Head>
     </>

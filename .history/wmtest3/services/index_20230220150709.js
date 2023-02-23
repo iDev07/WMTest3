@@ -51,5 +51,5 @@ export const getPostDetails = async (slug) => {
     }
   `;
   const result = await request(graphqlAPI, query);
-  return result.edges;
+  return result.post;
 };

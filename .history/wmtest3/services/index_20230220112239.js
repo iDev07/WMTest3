@@ -28,28 +28,3 @@ export const getPosts = async () => {
 
   return result.newsAPIConnection.edges;
 };
-
-export const getPostDetails = async (slug) => {
-  const query = gql`
-    query News {
-      newsAPIConnection {
-        edges {
-          node {
-            createdAt
-            created_date
-            description_uz
-            heading_en
-            heading_ru
-            heading_uz
-            slug
-            image_news {
-              url
-            }
-          }
-        }
-      }
-    }
-  `;
-  const result = await request(graphqlAPI, query);
-  return result.edges;
-};

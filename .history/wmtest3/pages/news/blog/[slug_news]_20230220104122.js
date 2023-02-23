@@ -1,23 +1,20 @@
 import React from "react";
 import { getPosts } from "../../../services";
-import { getPostDetails } from "../../../services";
 import { useTranslation } from "react-i18next";
 import Head from "next/head";
 export default function Slug({ post }) {
-  console.log(post);
   const { t } = useTranslation();
   const { i18n } = useTranslation();
-
   return (
     <>
       <Head>
         <title>
+          {" "}
           {i18n.language === "uz"
             ? post.heading_uz
             : i18n.language === "ru"
             ? post.heading_ru
             : post.heading_en}
-          {post.slug}
         </title>
       </Head>
     </>
@@ -26,7 +23,7 @@ export default function Slug({ post }) {
 
 // Fetch data at build time
 export async function getStaticProps({ params }) {
-  const data = await getPosts(params.slug);
+  const data = await getPostDetails(params.slug_news);
   return {
     props: {
       post: data,
@@ -39,7 +36,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const posts = await getPosts();
   return {
-    paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+    paths: posts.map(({ node: { slug_news } }) => ({ params: { slug_news } })),
     fallback: true,
   };
 }

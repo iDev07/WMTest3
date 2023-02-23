@@ -20,6 +20,7 @@ export default function Slug({ post }) {
           {post.slug}
         </title>
       </Head>
+      <div> Lorem ipsum dolor sit </div>
     </>
   );
 }

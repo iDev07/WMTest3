@@ -1,32 +1,22 @@
 import React from "react";
 import { getPosts } from "../../../services";
-import { getPostDetails } from "../../../services";
 import { useTranslation } from "react-i18next";
 import Head from "next/head";
 export default function Slug({ post }) {
-  console.log(post);
-  const { t } = useTranslation();
-  const { i18n } = useTranslation();
-
+  const {t } = useTranslation()
+  const {i18n} = useTranslation()
   return (
     <>
-      <Head>
-        <title>
-          {i18n.language === "uz"
-            ? post.heading_uz
-            : i18n.language === "ru"
-            ? post.heading_ru
-            : post.heading_en}
-          {post.slug}
-        </title>
-      </Head>
+    <Head>
+      <title>{post.}</title>
+    </Head>
     </>
-  );
+  )
 }
 
 // Fetch data at build time
 export async function getStaticProps({ params }) {
-  const data = await getPosts(params.slug);
+  const data = await getPostDetails(params.slug);
   return {
     props: {
       post: data,

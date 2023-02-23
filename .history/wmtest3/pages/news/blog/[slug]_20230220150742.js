@@ -20,16 +20,17 @@ export default function Slug({ post }) {
           {post.slug}
         </title>
       </Head>
+      <div></div>
     </>
   );
 }
 
 // Fetch data at build time
 export async function getStaticProps({ params }) {
-  const data = await getPosts(params.slug);
+  const data = await getPostDetails(params.slug);
   return {
     props: {
-      post: data,
+      newsAPIConnection: data,
     },
   };
 }

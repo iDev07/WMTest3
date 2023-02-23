@@ -58,7 +58,7 @@ export const HomeNewsPiece = ({ post }) => {
   return (
     // <SwiperSlide>
     <div className="mycol">
-      <Link href={post.slug}>
+      <Link href={post.slug_news}>
         <div className="wrapper_slider">
           <div className="image_parent">
             <div className="hover_effect">
@@ -84,7 +84,7 @@ export const MainNewsPart = ({ post }) => {
   const { i18n } = useTranslation();
   return (
     <div className="mycol">
-      <Link href={`/news/blog/${post.slug}`}>
+      <Link href={`/news/blog/${post.slug_news}`}>
         <div className="top_img">
           <img src={post.image_news.url} />
         </div>
