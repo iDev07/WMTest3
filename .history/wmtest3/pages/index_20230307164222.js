@@ -18,10 +18,9 @@ import "swiper/css/navigation";
 import { getPosts } from "../services";
 import { homeMainTexts } from "../services";
 
-export default function Home({ posts, mainTexts }) {
+export default function Home({ posts }) {
   const { t } = useTranslation();
-  // console.log(posts);
-  console.log(mainTexts);
+  console.log(posts);
   return (
     <>
       <Head>
@@ -32,7 +31,7 @@ export default function Home({ posts, mainTexts }) {
       </Head>
       <main className="main">
         <Particles />
-        <Introduction mainTexts={mainTexts} />
+        <Introduction />
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
@@ -113,6 +112,6 @@ export async function getStaticProps() {
   const posts = (await getPosts()) || [];
   const mainTexts = (await homeMainTexts()) || [];
   return {
-    props: { posts, mainTexts },
+    props: { posts, homeMainTexts },
   };
 }

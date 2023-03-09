@@ -20,7 +20,7 @@ import { homeMainTexts } from "../services";
 
 export default function Home({ posts, mainTexts }) {
   const { t } = useTranslation();
-  // console.log(posts);
+  console.log(posts);
   console.log(mainTexts);
   return (
     <>
@@ -32,7 +32,7 @@ export default function Home({ posts, mainTexts }) {
       </Head>
       <main className="main">
         <Particles />
-        <Introduction mainTexts={mainTexts} />
+        <Introduction />
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}

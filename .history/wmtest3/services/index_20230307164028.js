@@ -58,5 +58,5 @@ export const homeMainTexts = async () => {
     }
   `;
   const result = await request(graphqlAPI, query);
-  return result.homemaintitles;
+  return result;
 };

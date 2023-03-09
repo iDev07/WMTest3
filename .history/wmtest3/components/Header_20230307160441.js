@@ -70,9 +70,15 @@ function Header() {
               </div>
               <div className="div_called_li">
                 <Link href="/all4umarket">ALL4U Market</Link>
-                <div className="hidden_links_one ">
+                <div className="hidden_links_one">
                   <li>
                     <Link href="/about-us">ALL4U Franchise</Link>
+                  </li>
+                  <li>
+                    <Link href="/team-members">{t("submenus.about2")}</Link>
+                  </li>
+                  <li>
+                    <Link href="/join-us">{t("submenus.about3")}</Link>
                   </li>
                 </div>
               </div>

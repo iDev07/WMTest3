@@ -32,7 +32,7 @@ export default function Home({ posts, mainTexts }) {
       </Head>
       <main className="main">
         <Particles />
-        <Introduction mainTexts={mainTexts} />
+        <Introduction />
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}

@@ -6,7 +6,6 @@ import { homeMainTexts } from "../../services";
 import "animate.css";
 function Introduction({ mainTexts }) {
   const { t } = useTranslation();
-  const { i18n } = useTranslation();
   console.log(mainTexts);
   return (
     <div className="Introduction">
@@ -20,11 +19,6 @@ function Introduction({ mainTexts }) {
               <span>{t("homeMain.shortWord")}</span> {t("homeMain.mainText")}
             </h1>
             <p className="short_about animate__animated animate__zoomIn">
-              {i18n.language === "uz"
-                ? mainTexts[0].homemaintitle_uz
-                : i18n.language === "ru"
-                ? mainTexts[0].homemaintitle_ru
-                : mainTexts[0].homemaintitle_en}
               {t("homeMain.mainDes1")}
             </p>
             <div className="border_g">

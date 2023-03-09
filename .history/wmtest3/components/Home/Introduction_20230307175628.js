@@ -25,7 +25,7 @@ function Introduction({ mainTexts }) {
                 : i18n.language === "ru"
                 ? mainTexts[0].homemaintitle_ru
                 : mainTexts[0].homemaintitle_en}
-              {t("homeMain.mainDes1")}
+              {/* {t("homeMain.mainDes1")} */}
             </p>
             <div className="border_g">
               <Link href="/about-us">{t("homeMain.moreRead")}</Link>

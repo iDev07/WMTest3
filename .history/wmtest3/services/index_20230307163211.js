@@ -46,17 +46,3 @@ export const getPostDetails = async (slug) => {
 
   return result.post;
 };
-
-export const homeMainTexts = async () => {
-  const query = gql`
-    query myQuery {
-      homemaintitles {
-        homemaintitle_en
-        homemaintitle_ru
-        homemaintitle_uz
-      }
-    }
-  `;
-  const result = await request(graphqlAPI, query);
-  return result.homemaintitles;
-};
