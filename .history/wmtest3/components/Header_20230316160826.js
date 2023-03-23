@@ -78,9 +78,7 @@ function Header() {
                     {" "}
                     <Link href="/about-us">Investition</Link>
                   </li>
-                  <li>
-                    <Link href="/">ALL4U Tourism</Link>
-                  </li>
+                  <li>ALL4U Tour</li>
                 </div>
               </div>
               <div className="div_called_li">

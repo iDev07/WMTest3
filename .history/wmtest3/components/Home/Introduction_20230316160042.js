@@ -15,22 +15,22 @@ function Introduction({ mainTexts }) {
         </div> */}
         <div className="content">
           <div className="main containerdev">
-            <h1 className="heading animate__animated animate__zoomIn light_blue">
-              {/* <span>{t("homeMain.shortWord")}</span> */}
+            <h1 className="heading animate__animated animate__zoomIn">
+              <span>{t("homeMain.shortWord")}</span>
               {i18n.language === "uz"
                 ? mainTexts[0].homemaintitle_uz
                 : i18n.language === "ru"
                 ? mainTexts[0].homemaintitle_ru
                 : mainTexts[0].homemaintitle_en}
-              {/* {t("homeMain.mainText")} */}
+              {t("homeMain.mainText")}
             </h1>
             <p className="short_about animate__animated animate__zoomIn">
               {i18n.language === "uz"
-                ? mainTexts[0].homedescription_uz
+                ? mainTexts[0].homemaintitle_uz
                 : i18n.language === "ru"
-                ? mainTexts[0].homedescription_ru
-                : mainTexts[0].homedescription_en}
-              {/* {t("homeMain.mainDes1")} */}
+                ? mainTexts[0].homemaintitle_ru
+                : mainTexts[0].homemaintitle_en}
+              {t("homeMain.mainDes1")}
             </p>
             <div className="border_g">
               <Link href="/about-us">{t("homeMain.moreRead")}</Link>

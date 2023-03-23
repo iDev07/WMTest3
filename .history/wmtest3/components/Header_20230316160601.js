@@ -74,13 +74,6 @@ function Header() {
                   <li>
                     <Link href="/about-us">ALL4U Franchise</Link>
                   </li>
-                  <li>
-                    {" "}
-                    <Link href="/about-us">Investition</Link>
-                  </li>
-                  <li>
-                    <Link href="/">ALL4U Tourism</Link>
-                  </li>
                 </div>
               </div>
               <div className="div_called_li">

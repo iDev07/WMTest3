@@ -79,7 +79,7 @@ function Header() {
                     <Link href="/about-us">Investition</Link>
                   </li>
                   <li>
-                    <Link href="/">ALL4U Tourism</Link>
+                    <Link href="/">ALL4U Tour</Link>
                   </li>
                 </div>
               </div>

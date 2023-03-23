@@ -26,11 +26,11 @@ function Introduction({ mainTexts }) {
             </h1>
             <p className="short_about animate__animated animate__zoomIn">
               {i18n.language === "uz"
-                ? mainTexts[0].homedescription_uz
+                ? mainTexts[0].homemaintitle_uz
                 : i18n.language === "ru"
-                ? mainTexts[0].homedescription_ru
-                : mainTexts[0].homedescription_en}
-              {/* {t("homeMain.mainDes1")} */}
+                ? mainTexts[0].homemaintitle_ru
+                : mainTexts[0].homemaintitle_en}
+              {t("homeMain.mainDes1")}
             </p>
             <div className="border_g">
               <Link href="/about-us">{t("homeMain.moreRead")}</Link>

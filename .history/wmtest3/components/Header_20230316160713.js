@@ -73,13 +73,7 @@ function Header() {
                 <div className="hidden_links_one extra_links_menu">
                   <li>
                     <Link href="/about-us">ALL4U Franchise</Link>
-                  </li>
-                  <li>
-                    {" "}
                     <Link href="/about-us">Investition</Link>
-                  </li>
-                  <li>
-                    <Link href="/">ALL4U Tourism</Link>
                   </li>
                 </div>
               </div>

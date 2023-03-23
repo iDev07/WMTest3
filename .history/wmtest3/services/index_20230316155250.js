@@ -54,9 +54,6 @@ export const homeMainTexts = async () => {
         homemaintitle_en
         homemaintitle_ru
         homemaintitle_uz
-        homedescription_uz
-        homedescription_ru
-        homedescription_en
       }
     }
   `;
