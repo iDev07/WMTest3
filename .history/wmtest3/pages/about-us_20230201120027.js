@@ -42,10 +42,10 @@ function About() {
             <p className="simple_text">{t("aboutPage.aboutCompany")}</p>
             <div className="boss">
               <div className="wrapper">
-                {/* <div className="left_box">
+                <div className="left_box">
                   <img src="images/boss.png" />
-                </div> */}
-                <div className="right_box w-70">
+                </div>
+                <div className="right_box">
                   <h1>{t("aboutPage.directorName")}</h1>
                   <p className="title">{t("aboutPage.directorPosition")}</p>
                   <p className="about_boss">{t("aboutPage.directorAbout")}</p>
@@ -82,21 +82,21 @@ function About() {
                 </div>
                 <div className="mycol">
                   <div className="myrow">
-                    <img src="images/advan4.png" />
+                    <img src="images/advan3.png" />
                     <h3>{t("aboutPage.valuestitle4")}</h3>
                     <p>{t("aboutPage.valuesDesc4")}</p>
                   </div>
                 </div>
                 <div className="mycol">
                   <div className="myrow">
-                    <img src="images/advan5.png" />
+                    <img src="images/advan3.png" />
                     <h3>{t("aboutPage.valuestitle5")}</h3>
                     <p>{t("aboutPage.valuesDesc5")}</p>
                   </div>
                 </div>
                 <div className="mycol">
                   <div className="myrow">
-                    <img src="images/advan6.png" />
+                    <img src="images/advan3.png" />
                     <h3>{t("aboutPage.valuestitle6")}</h3>
                     <p>{t("aboutPage.valuesDesc6")}</p>
                   </div>

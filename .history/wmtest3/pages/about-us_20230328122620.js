@@ -89,14 +89,14 @@ function About() {
                 </div>
                 <div className="mycol">
                   <div className="myrow">
-                    <img src="images/advan5.png" />
+                    <img src="images/advan3.png" />
                     <h3>{t("aboutPage.valuestitle5")}</h3>
                     <p>{t("aboutPage.valuesDesc5")}</p>
                   </div>
                 </div>
                 <div className="mycol">
                   <div className="myrow">
-                    <img src="images/advan6.png" />
+                    <img src="images/advan3.png" />
                     <h3>{t("aboutPage.valuestitle6")}</h3>
                     <p>{t("aboutPage.valuesDesc6")}</p>
                   </div>
