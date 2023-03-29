@@ -79,42 +79,60 @@ function Partners() {
             <SwiperSlide>
               <div className="c_logo">
                 <a href="http://www.ntholding.uz/">
-                  <img src="images/partners/nthh.jpg" alt="partner" />
+                  <img
+                    src="images/partners/nthh.e784e9ee4fe1077cf122.jpg"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://candy-gold.uz/ru/">
-                  <img src="images/partners/candy.png" alt="partner" />
+                  <img
+                    src="images/partners/candy.962417b073236ed98ea5.png"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="c_logo">
                 <a href="http://sunfinite.uz/">
-                  <img src="images/partners/sunfinite.png" alt="partner" />
+                  <img
+                    src="images/partners/sunfinite.238f95046e157e3acd67.png"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://tst-g.uz/">
-                  <img src="images/partners/tst.png" alt="partner" />
+                  <img
+                    src="images/partners/tst.5e0e56285658879d79c2.png"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="c_logo">
                 <a href="http://www.krember.uz/?lang=ru">
-                  <img src="images/partners/krember.png" alt="partner" />
+                  <img
+                    src="images/partners/krember.33e77de9d9ac49f57263.png"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://wangdagroup.uz/">
-                  <img src="images/partners/vwd.jpg" alt="partner" />
+                  <img
+                    src="images/partners/vwd.a41ba9fe005a472de797.jpg"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>

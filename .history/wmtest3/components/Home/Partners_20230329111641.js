@@ -86,7 +86,10 @@ function Partners() {
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://candy-gold.uz/ru/">
-                  <img src="images/partners/candy.png" alt="partner" />
+                  <img
+                    src="images/partners/candy.962417b073236ed98ea5.png"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
@@ -114,7 +117,10 @@ function Partners() {
             <SwiperSlide>
               <div className="c_logo">
                 <a href="https://wangdagroup.uz/">
-                  <img src="images/partners/vwd.jpg" alt="partner" />
+                  <img
+                    src="images/partners/vwd.a41ba9fe005a472de797.jpg"
+                    alt="partner"
+                  />
                 </a>
               </div>
             </SwiperSlide>
