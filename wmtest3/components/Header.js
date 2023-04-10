@@ -76,7 +76,7 @@ function Header() {
                   </li>
                   <li>
                     {" "}
-                    <Link href="/about-us">Investition</Link>
+                    <Link href="#">Investition</Link>
                   </li>
                   <li>
                     <Link href="https://all4u-tour.uz">ALL4U Tourism</Link>
