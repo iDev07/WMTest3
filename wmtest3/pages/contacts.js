@@ -26,6 +26,18 @@ function Contacts() {
                         worldmiral@mail.ru
                       </a>
                     </span>
+                    |
+                    <span>
+                      {t("contactPage.adminstration")}
+                      <a
+                        href="tel: +998 99 350 00 00 "
+                        style={{
+                          marginLeft: "8px",
+                        }}
+                      >
+                        +998 99 350 00 00
+                      </a>
+                    </span>
                   </p>
                 </h1>
               </div>

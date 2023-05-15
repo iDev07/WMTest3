@@ -157,6 +157,7 @@ function Footer() {
                   <CallOutlinedIcon /> +998 71 230 38 83
                 </a>
               </li>
+
               <li>
                 <EmailOutlinedIcon />
                 worldmiral@mail.ru
@@ -164,6 +165,13 @@ function Footer() {
               <li>
                 <AccessTimeOutlinedIcon />
                 {t("footer.link11")}
+              </li>
+              <li>
+                <a href="tel: +998 99 350 00 00">
+                  {" "}
+                  <CallOutlinedIcon /> {t("contactPage.adminstration")} +998 99
+                  350 00 00
+                </a>
               </li>
             </div>
           </div>

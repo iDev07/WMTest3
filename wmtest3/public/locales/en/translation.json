@@ -259,7 +259,8 @@
   "contactPage": {
     "intro": "Contact us",
     "desc": "We answer questions about the group of companies, cooperation and tell you how to get a job",
-    "number": "Number:"
+    "number": "Number:",
+    "adminstration": "Administration:"
   },
   "notFound": {
     "intro": "Page not found!",

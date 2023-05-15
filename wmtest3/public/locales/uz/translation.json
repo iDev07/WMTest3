@@ -261,7 +261,8 @@
   "contactPage": {
     "intro": "Biz bilan bog'laning",
     "desc": "Biz kompaniyalar guruhi, hamkorlik haqidagi savollarga javob beramiz va bizga ishga qanday qilib kirishni aytib beramiz",
-    "number": "Yagona raqam:"
+    "number": "Yagona raqam:",
+    "adminstration": "Rahbariyat:"
   },
   "notFound": {
     "intro": "Sahifa topilmadi!",

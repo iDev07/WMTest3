@@ -15,15 +15,21 @@
         margin: 20px auto;
       }
     }
+    .with_anime {
+      display: block;
+    }
   }
   .contacs_p {
+    @media (max-width: 496px) {
+      display: grid;
+    }
     margin-top: 50px;
     span {
       @media (max-width: 768px) {
         font-size: 12px;
       }
       padding: 0 20px;
-      font-size: 25px;
+      font-size: 17px;
       color: #5e9cfa;
     }
   }
