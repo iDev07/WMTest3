@@ -61,7 +61,7 @@ function All4uMarket() {
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={1669} redraw={true}>
+                    <CountUp end={10000} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -73,7 +73,7 @@ function All4uMarket() {
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={1669} redraw={true}>
+                    <CountUp end={17} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -182,7 +182,7 @@ function All4uMarket() {
         </div>
         <div className="link_all4u p-5 light_dark">
           <div className="wrapper">
-            <a href="/frasnhize.pdf" className="border_g">
+            <a href="https://all4u.market" className="border_g">
               {t("bDirections.goAll4u")}
             </a>
           </div>

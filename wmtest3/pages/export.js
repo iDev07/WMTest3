@@ -53,7 +53,7 @@ function Export() {
           <div className="num_wrapper">
             <div className="mycol">
               <div className="inner_wrap">
-                <CountUp end={1669} redraw={true}>
+                <CountUp end={127} redraw={true}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />
@@ -65,7 +65,7 @@ function Export() {
             </div>
             <div className="mycol">
               <div className="inner_wrap">
-                <CountUp end={1669} redraw={true}>
+                <CountUp end={600} redraw={true}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />
