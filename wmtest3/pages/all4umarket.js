@@ -61,19 +61,28 @@ function All4uMarket() {
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={10000} redraw={true}>
-                      {({ countUpRef, start }) => (
-                        <VisibilitySensor onChange={start} delayedCall>
-                          <span ref={countUpRef} />
-                        </VisibilitySensor>
-                      )}
-                    </CountUp>
+                    <div className="for_plus">
+                      <CountUp end={`16000`} redraw={true}>
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
+                      <span
+                        style={{
+                          marginLeft: "3px",
+                        }}
+                      >
+                        +
+                      </span>
+                    </div>
                     <p>{t("bDirections.mFacts2")}</p>
                   </div>
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={17} redraw={true}>
+                    <CountUp end={37} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
