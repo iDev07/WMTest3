@@ -52,18 +52,18 @@ function TeamMembers() {
         <div className="main_content">
           <div className="containerdev">
             <div className="members">
-              <Member
+              {/* <Member
                 fio={t("aboutPage.teamDirector")}
                 position={t("aboutPage.teamDirectorPos")}
                 img="images/Vector.png"
                 about={t("aboutPage.teamDirectorAbout")}
-              />
-              <Member
+              /> */}
+              {/* <Member
                 fio={t("aboutPage.teamMember1")}
                 position={t("aboutPage.memberPosition1")}
                 img="images/Vector.png"
                 about={t("aboutPage.memberAbout1")}
-              />
+              /> */}
               <Member
                 fio={t("aboutPage.teamMember2")}
                 position={t("aboutPage.memberPosition2")}
