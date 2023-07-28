@@ -43,11 +43,11 @@ export default function Document() {
           content="http://worldmiral.com/static/media/logo.cc6b24336917bd54a104484b70b8e4b4.svg"
         />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
+        <Script
+          strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
-        <Script id="google-analytics">
+        <Script strategy="lazyOnload" id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
