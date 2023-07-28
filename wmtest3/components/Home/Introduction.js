@@ -15,7 +15,10 @@ function Introduction({ mainTexts }) {
         </div> */}
         <div className="content">
           <div className="main containerdev">
-            <h1 className="heading animate__animated animate__zoomIn light_blue">
+            <h1
+              key={mainTexts.id}
+              className="heading animate__animated animate__zoomIn light_blue"
+            >
               {/* <span>{t("homeMain.shortWord")}</span> */}
               {i18n.language === "uz"
                 ? mainTexts[0].homemaintitle_uz
@@ -24,7 +27,10 @@ function Introduction({ mainTexts }) {
                 : mainTexts[0].homemaintitle_en}
               {/* {t("homeMain.mainText")} */}
             </h1>
-            <p className="short_about animate__animated animate__zoomIn">
+            <p
+              key={mainTexts.id}
+              className="short_about animate__animated animate__zoomIn"
+            >
               {i18n.language === "uz"
                 ? mainTexts[0].homedescription_uz
                 : i18n.language === "ru"
