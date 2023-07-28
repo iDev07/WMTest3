@@ -45,8 +45,8 @@ export default function Document() {
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
+          src="https://www.googletagmanager.com/gtag/js?id=G-PV0GY6KYJD"
+        ></script>
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
