@@ -70,12 +70,7 @@ function TeamMembers() {
                 img="images/Vector.png"
                 about={t("aboutPage.memberAbout2")}
               />
-              <Member
-                fio={t("aboutPage.teamMember3")}
-                position={t("aboutPage.memberPosition3")}
-                img="images/Vector.png"
-                about={t("aboutPage.memberAbout3")}
-              />
+
               <Member
                 fio={t("aboutPage.teamMember4")}
                 position={t("aboutPage.memberPosition4")}

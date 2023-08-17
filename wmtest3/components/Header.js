@@ -14,13 +14,15 @@ function Header() {
   };
   const [scroll, setScroll] = useState("");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY < 300) {
-      setScroll("");
-    } else {
-      setScroll("scrolled");
-    }
-  });
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 300) {
+        setScroll("");
+      } else {
+        setScroll("scrolled");
+      }
+    });
+  }
   const { t } = useTranslation();
   return (
     <div className={`header_wrapper ${scroll}`}>
