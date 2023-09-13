@@ -71,17 +71,17 @@ function Header() {
                 </div>
               </div>
               <div className="div_called_li">
-                <Link href="/all4umarket">ALL4U Market</Link>
+                <Link href="/turbomarket">Turbo Market</Link>
                 <div className="hidden_links_one extra_links_menu">
-                  <li>
-                    <Link href="#">ALL4U Franchise</Link>
-                  </li>
-                  <li>
-                    {" "}
+                  {/* <li>
+                    <Link href="#">Turbo Franchise</Link>
+                  </li> */}
+                  {/* <li> */}
+                  {/* {" "}
                     <Link href="#">Investition</Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link href="https://all4u-tour.uz">ALL4U Tourism</Link>
+                    <Link href="https://turbotour.uz">Turbo Tour</Link>
                   </li>
                 </div>
               </div>

@@ -41,7 +41,7 @@ function All4uMarket() {
             </div>
           </div>
         </div>
-        <LineHeading name_section={"ALL4U MARKET"} />
+        <LineHeading name_section={"TURBO MARKET"} />
         <div className="about_project light_dark">
           <div className="containerdev">
             <p className="uni_p">{t("bDirections.mSmallAbout")}</p>
@@ -82,7 +82,7 @@ function All4uMarket() {
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={37} redraw={true}>
+                    <CountUp end={40} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -147,7 +147,7 @@ function All4uMarket() {
           <div className="containerdev">
             <div className="wrapper">
               <div className="mycol">
-                <a href="https://all4u.market/wholesale/services/garantee/">
+                <a href="https://turbomarket.uz/wholesale/services/garantee/">
                   <div className="inner_wrap">
                     <img src="images/services1.png" />
                   </div>
@@ -155,7 +155,7 @@ function All4uMarket() {
                 </a>
               </div>
               <div className="mycol">
-                <a href="https://all4u.market/wholesale/services/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F/">
+                <a href="https://turbomarket.uz/wholesale/services/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F/">
                   <div className="inner_wrap">
                     <img src="images/services2.png" />
                   </div>
@@ -163,7 +163,7 @@ function All4uMarket() {
                 </a>
               </div>
               <div className="mycol">
-                <a href="https://all4u.market/wholesale/services/dilevery/">
+                <a href="https://turbomarket.uz/wholesale/services/dilevery/">
                   <div className="inner_wrap">
                     <img src="images/services3.png" />
                   </div>
@@ -179,7 +179,7 @@ function All4uMarket() {
                 </Link>
               </div>
               <div className="mycol">
-                <a href="https://all4u.market/wholesale/services/declaration-ru/">
+                <a href="https://turbomarket.uz/wholesale/services/declaration-ru/">
                   <div className="inner_wrap">
                     <img src="images/services5.png" />
                   </div>
@@ -191,7 +191,7 @@ function All4uMarket() {
         </div>
         <div className="link_all4u p-5 light_dark">
           <div className="wrapper">
-            <a href="https://all4u.market" className="border_g">
+            <a href="https://turbomarket.uz" className="border_g">
               {t("bDirections.goAll4u")}
             </a>
           </div>

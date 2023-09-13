@@ -101,7 +101,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/all4umarket">
+                <Link href="/turbomarket">
                   <ArrowForwardIosIcon />
                   {t("footer.link6")}
                 </Link>
