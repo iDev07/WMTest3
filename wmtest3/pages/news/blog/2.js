@@ -13,7 +13,7 @@ function MainSingle() {
           <div className="container">
             <div className="content">
               {/* <h2>{t("news.news1")}</h2> */}
-              <img src="../../images/news/news2.png" alt="img" />
+              <img src="../../images/turbo_back.png" alt="img" />
               <p>{t("newsPage.news2")}</p>
             </div>
           </div>
