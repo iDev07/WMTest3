@@ -35,7 +35,7 @@ function Directions() {
             </Link>
           </div>
           <div className="mycol">
-            <Link href="/all4umarket">
+            <Link href="/turbomarket">
               <div className="main_wrapper">
                 {/* <img src="images/direct1.png" /> */}
                 <h1>{t("directions.type4")}</h1>
