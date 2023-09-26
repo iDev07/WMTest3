@@ -49,20 +49,29 @@ function All4uMarket() {
               <div className="num_wrapper">
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={1669} redraw={true}>
-                      {({ countUpRef, start }) => (
-                        <VisibilitySensor onChange={start} delayedCall>
-                          <span ref={countUpRef} />
-                        </VisibilitySensor>
-                      )}
-                    </CountUp>
+                    <div className="for_plus">
+                      <CountUp end={2000} redraw={true}>
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
+                      <span
+                        style={{
+                          marginLeft: "3px",
+                        }}
+                      >
+                        +
+                      </span>
+                    </div>
                     <p>{t("bDirections.mFacts1")}</p>
                   </div>
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
                     <div className="for_plus">
-                      <CountUp end={`16000`} redraw={true}>
+                      <CountUp end={`20000`} redraw={true}>
                         {({ countUpRef, start }) => (
                           <VisibilitySensor onChange={start} delayedCall>
                             <span ref={countUpRef} />
@@ -82,7 +91,7 @@ function All4uMarket() {
                 </div>
                 <div className="mycol">
                   <div className="inner_wrap">
-                    <CountUp end={40} redraw={true}>
+                    <CountUp end={200} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
