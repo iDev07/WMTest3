@@ -28,7 +28,7 @@ function Footer() {
             </div>
             <div className="socials">
               <li>
-                <a href="https://www.instagram.com/all4u.market/">
+                <a href="https://instagram.com/worldmiral_offical/">
                   <img src="../../images/social_instagram.png" />
                 </a>
               </li>
@@ -38,22 +38,13 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="hhtps">
-                  <img src="../../images/social_odno.png" />
-                </a>
-              </li>
-              <li>
                 <a href="https://www.facebook.com/worldmiral.llc/">
                   <img src="../../images/social_facebook.png" />
                 </a>
               </li>
+
               <li>
-                <a href="hhtps">
-                  <img src="../../images/social_vk.png" />
-                </a>
-              </li>
-              <li>
-                <a href="hhtps">
+                <a href="https://www.linkedin.com/company/world-miral/">
                   <img src="../../images/social_linkedin.png" />
                 </a>
               </li>
