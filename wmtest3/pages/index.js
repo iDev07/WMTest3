@@ -36,7 +36,7 @@ export default function Home({ posts, mainTexts }) {
         <Heading
           name={t("whywe.intro")}
           name_page={"Присоединяйтесь к нам"}
-          link={"/"}
+          link={"/about-us"}
           number={"01"}
         />
         <Advantages />

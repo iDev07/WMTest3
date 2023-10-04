@@ -151,19 +151,19 @@ function Footer() {
 
               <li>
                 <EmailOutlinedIcon />
-                worldmiral@mail.ru
+                worldmiraluz@gmail.com
               </li>
               <li>
                 <AccessTimeOutlinedIcon />
                 {t("footer.link11")}
               </li>
-              <li>
+              {/* <li>
                 <a href="tel: +998 99 350 00 00">
                   {" "}
                   <CallOutlinedIcon /> {t("contactPage.adminstration")} +998 99
                   350 00 00
                 </a>
-              </li>
+              </li> */}
             </div>
           </div>
         </div>
