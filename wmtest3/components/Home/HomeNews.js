@@ -119,21 +119,6 @@ function HomeNews() {
                 </Link>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="mycol">
-                <Link href="/news/blog/6">
-                  <div className="wrapper_slider">
-                    <div className="image_parent">
-                      <div className="hover_effect">
-                        <p>{t("directions.more")}</p>
-                      </div>
-                      <img src="images/news/news6.jpg" />
-                    </div>
-                    <h2>{t("newsPage.news6")}</h2>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
           </Swiper>
         </div>
       </div>
