@@ -21,7 +21,7 @@ import { homeMainTexts } from "../services";
 export default function Home({ posts, mainTexts }) {
   const { t } = useTranslation();
   // console.log(posts);
-  console.log(mainTexts);
+  console.log(posts);
   return (
     <>
       <Head>
