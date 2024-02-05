@@ -83,6 +83,9 @@ function Header() {
                   <li>
                     <Link href="https://turbotour.uz">Turbo Tour</Link>
                   </li>
+                  <li>
+                    <Link href="https://miraltour.com">Miral Tour</Link>
+                  </li>
                 </div>
               </div>
               <div className="div_called_li">
